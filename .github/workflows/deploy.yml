@@ -17,12 +17,24 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout your repository using git
-        uses: actions/checkout@v7
-      - name: Install, build, and upload your site output
-        uses: withastro/action@v6
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js (Force Version 22)
+        uses: actions/setup-node@v4
         with:
-          node-version: 22.12.0
+          node-version: 22
+
+      - name: Install dependencies
+        run: npm ci # Use 'pnpm install' or 'yarn install' if using another manager
+
+      - name: Build Astro site
+        run: npm run build
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./dist # The default directory where Astro outputs static files
   deploy:
     needs: build
     runs-on: ubuntu-latest
