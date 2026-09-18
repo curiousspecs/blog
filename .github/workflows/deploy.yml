@@ -20,6 +20,12 @@ jobs:
       - name: Checkout your repository using git
         uses: actions/checkout@v7
 
+        # Add this step to force GitHub to use Node 22
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: 'npm' # Change to 'pnpm' or 'yarn' if you use them
       - name: Install, build, and upload your site output
         uses: withastro/action@v6
 
