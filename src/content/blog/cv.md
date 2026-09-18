@@ -1,5 +1,5 @@
 ﻿---
-title: "Brief Curriculum Vitae"
+title: "Curriculum Vitae"
 description: "Learn more about what I have done."
 pubDate: 2026-09-17
 heroImage: "../../assets/banner1.jpg"

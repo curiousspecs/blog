@@ -4,12 +4,20 @@ import type { HTMLAttributes } from 'astro/types';
 type Props = HTMLAttributes<'a'>;
 
 const { href, class: className, ...props } = Astro.props;
-const pathname = Astro.url.pathname.replace(import.meta.env.BASE_URL, '');
+
+const { pathname } = Astro.url;
+
+// 1. Ensure the incoming link includes the project's base URL path prefix
+const localizedHref = typeof href === 'string' && href.startsWith('/') 
+  ? `${import.meta.env.BASE_URL.replace(/\/$/, '')}${href}`
+  : href;
+
+// 2. Adjust active checking so it accounts for the subfolder route structure
 const subpath = pathname.match(/[^\/]+/g);
-const isActive = href === pathname || href === '/' + (subpath?.[0] || '');
+const isActive = localizedHref === pathname || localizedHref === '/' + subpath?.[0];
 ---
 
-<a href={href} class:list={[className, { active: isActive }]} {...props}>
+<a href={localizedHref} class:list={[className, { active: isActive }]} {...props}>
 	<slot />
 </a>
 <style>
