@@ -1,0 +1,72 @@
+---
+// A list of posts: date, title and description. Used on the home page and the archive.
+import type { CollectionEntry } from 'astro:content';
+import FormattedDate from './FormattedDate.astro';
+
+interface Props {
+	posts: CollectionEntry<'blog'>[];
+	headingLevel?: 'h2' | 'h3';
+}
+
+const { posts, headingLevel = 'h3' } = Astro.props;
+const Heading = headingLevel;
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+---
+
+<ol class="post-list">
+	{
+		posts.map((post) => (
+			<li>
+				<p class="meta">
+					<FormattedDate date={post.data.pubDate} />
+				</p>
+				<Heading class="title">
+					<a href={`${base}/posts/${post.id}/`}>{post.data.title}</a>
+				</Heading>
+				<p class="desc">{post.data.description}</p>
+			</li>
+		))
+	}
+</ol>
+<style>
+	.post-list {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+	li {
+		padding-block: 1.4rem;
+		border-top: 1px solid var(--rule);
+	}
+	li:first-child {
+		border-top: 0;
+		padding-top: 0;
+	}
+	.meta {
+		margin: 0 0 0.3rem;
+	}
+	.title {
+		margin: 0;
+		font-size: 1.35rem;
+		line-height: 1.25;
+	}
+	.title a {
+		color: var(--ink);
+		text-decoration: none;
+	}
+	.title a:hover {
+		color: var(--accent);
+		text-decoration: underline;
+	}
+	.desc {
+		margin: 0.4rem 0 0;
+		color: var(--muted);
+		font-size: 1.02rem;
+		line-height: 1.5;
+		display: -webkit-box;
+		-webkit-line-clamp: 3;
+		line-clamp: 3;
+		-webkit-box-orient: vertical;
+		overflow: hidden;
+	}
+</style>

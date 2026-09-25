@@ -14,12 +14,3 @@ At UCBA, Matt teaches American Cinema, World Cinema, Media Aesthetics, Media Des
 His current research applies computational methods to psychoanalytic theory. *Das Mich / Project Psyche* models the Freudian structural apparatus as a system of interacting agents running on local hardware, mapping each functional requirement to a named metapsychological mechanism with citations to both the Strachey Standard Edition and the Solms Revised Standard Edition. *Havenpass* develops a director/actor architecture for narrative agent systems, deriving its design from the agent-architecture and interactive-narrative research literature. Alongside this work he has completed university coursework in applied artificial intelligence and machine learning, programming, database management, and cognitive psychology.
 
 He has presented research internationally at Cambridge University in Cambridge, UK; Sapientia University in Cluj-Napoca, Romania; J.F. Oberlin University in Tokyo, Japan; and the University of British Columbia Okanagan in Kelowna, Canada. Other presentation venues include the Popular Culture Association National Conference, the Northeast Modern Language Association Annual Conference, and the Midwest Conference on Asian Affairs.
-
-Select peer-reviewed publications include:
-
-- "*L'Art Noir*: The Perfidy of Images in Film Noir," *The International Journal of Literary Humanities* 15, no. 1 (2017): 9-14.
-- "Totem and Tableaux: The Elegiac Photography of Hannah Maynard," *The International Journal of Literary Humanities* 14, no. 4 (2016): 55-63.
-- "Sookie and Symptom, Vampire and Void: Irruption of the Real in *True Blood*," *PsyArt Journal* 20 (February 18, 2016): 92-103.
-- "The Pomegranate: Marker of Cyclical Time, Seeds of Eternity," *International Journal of Humanities and Social Sciences* 1, no. 19 (December 2011): 52-59.
-- "Good Woman or Evil Woman? Draupadī as Active Agent in *The Mahābhārata*," *International Journal of the Humanities* 8, no. 9 (January 2011): 145-154.
-- "Eikoh Hosoe: The Destruction of a Myth," *Parnassus* (April 2008): 12-17.

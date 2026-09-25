@@ -1,5 +1,5 @@
 import { defineCollection, type SchemaContext } from 'astro:content';
-import { glob } from 'astro/loaders';
+import { file, glob } from 'astro/loaders';
 import { z } from 'astro/zod';
 
 // Type-check frontmatter using a schema
@@ -32,4 +32,22 @@ const pages = defineCollection({
 	schema,
 });
 
-export const collections = { blog, pages };
+// Publications list (src/data/publications.json), shown on /publications/.
+const publications = defineCollection({
+	loader: file('src/data/publications.json'),
+	schema: ({ image }) =>
+		z.object({
+			kind: z.enum(['article', 'catalogue']),
+			title: z.string(),
+			venue: z.string(),
+			details: z.string(),
+			year: z.number(),
+			url: z.url().optional(),
+			// Path relative to src/data/.
+			image: image().optional(),
+			// Slug of a post about this publication.
+			post: z.string().optional(),
+		}),
+});
+
+export const collections = { blog, pages, publications };

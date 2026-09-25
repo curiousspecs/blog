@@ -5,28 +5,39 @@ type Props = HTMLAttributes<'a'>;
 
 const { href, class: className, ...props } = Astro.props;
 
-const { pathname } = Astro.url;
+// Prefix root-relative links with the site's base path ('/blog').
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const localizedHref = typeof href === 'string' && href.startsWith('/') ? `${base}${href}` : href;
 
-// 1. Ensure the incoming link includes the project's base URL path prefix
-const localizedHref = typeof href === 'string' && href.startsWith('/') 
-  ? `${import.meta.env.BASE_URL.replace(/\/$/, '')}${href}`
-  : href;
-
-// 2. Adjust active checking so it accounts for the subfolder route structure
-const subpath = pathname.match(/[^\/]+/g);
-const isActive = localizedHref === pathname || localizedHref === '/' + subpath?.[0];
+// Active when this is the current page, or (for section links) an ancestor of it.
+const strip = (path: string) => path.replace(/\/$/, '');
+const current = strip(Astro.url.pathname);
+const target = strip(String(localizedHref));
+const isHome = target === base;
+const isActive = current === target || (!isHome && current.startsWith(`${target}/`));
 ---
 
-<a href={localizedHref} class:list={[className, { active: isActive }]} {...props}>
+<a
+	href={localizedHref}
+	class:list={[className, { active: isActive }]}
+	aria-current={isActive ? 'page' : undefined}
+	{...props}
+>
 	<slot />
 </a>
 <style>
 	a {
 		display: inline-block;
+		padding: 0.35rem 0;
+		color: var(--muted);
 		text-decoration: none;
+		border-bottom: 2px solid transparent;
+	}
+	a:hover {
+		color: var(--ink);
 	}
 	a.active {
-		font-weight: bolder;
-		text-decoration: underline;
+		color: var(--ink);
+		border-bottom-color: var(--accent);
 	}
 </style>
