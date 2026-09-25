@@ -19,7 +19,7 @@ const titleHtml = (p: Pub) => withItalics(p.data.title);
 
 <BaseLayout title="Publications" description="Publications by Matt Bennett.">
 	<div class="wrap">
-		<header class="head">
+		<header class="page-head">
 			<h1>Publications</h1>
 		</header>
 		{
@@ -65,14 +65,6 @@ const titleHtml = (p: Pub) => withItalics(p.data.title);
 	</div>
 </BaseLayout>
 <style>
-	.head {
-		padding-bottom: 1.5rem;
-		margin-bottom: 1rem;
-		border-bottom: 2px solid var(--ink);
-	}
-	.head h1 {
-		margin: 0;
-	}
 	.group {
 		padding-block: 2rem;
 	}

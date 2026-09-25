@@ -18,6 +18,9 @@
 	--font-ui: var(--font-atkinson), system-ui, sans-serif;
 
 	--measure: 40rem;
+	/* Page title size, shared so spacing can be measured from it (see .page-head). */
+	--h1-size: clamp(2.1rem, 1.4rem + 3vw, 3.4rem);
+	--page-head-pad: 1.5rem;
 	--wide: 62rem;
 	--gutter: clamp(1rem, 4vw, 2rem);
 
@@ -102,7 +105,7 @@ h6 {
 }
 
 h1 {
-	font-size: clamp(2.1rem, 1.4rem + 3vw, 3.4rem);
+	font-size: var(--h1-size);
 	font-weight: 500;
 	letter-spacing: -0.02em;
 	line-height: 1.05;
@@ -206,6 +209,25 @@ td {
 	padding: 0.4em 0.6em;
 	border-bottom: 1px solid var(--rule);
 	text-align: left;
+}
+
+/* ---------- Page header (Posts, Publications, About, Résumé) ---------- */
+
+/* Title left-aligned over a rule; optional meta text sits at the right on the same baseline. */
+.page-head {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: baseline;
+	justify-content: space-between;
+	gap: 0.5rem 2rem;
+	padding-bottom: var(--page-head-pad);
+	margin-bottom: 1rem;
+	border-bottom: 2px solid var(--ink);
+}
+
+.page-head h1,
+.page-head .meta {
+	margin: 0;
 }
 
 /* ---------- Interface text ---------- */
