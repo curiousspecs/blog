@@ -1,13 +1,13 @@
 ---
 title: "The Uncanny"
-description: "The screening and discussion at the last meeting of the Association for Psychoanalytical Thought (APT) prompted a debate between a professor of Greek philosophy and a psychoanalytic literary…"
+description: "The screening and discussion at the last meeting of the Association for Psychoanalytic Thought (APT) prompted a debate between a professor of Greek philosophy and a psychoanalytic literary…"
 pubDate: 2015-07-11
 heroImage: "../../assets/wordpress/2015/11/11181166_ori.jpg"
 tags: ["association for psychoanalytic thought","freud","horror","identification","lacan","suture","the babadook","the real","the uncanny","zizek"]
 wordpressUrl: "https://mattbennettucba.wordpress.com/2015/07/11/the-uncanny/"
 ---
 
-The screening and discussion at the last meeting of the Association for Psychoanalytical Thought (APT) prompted a debate between a professor of Greek philosophy and a psychoanalytic literary theorist, the central question of which, distilled, was:
+The screening and discussion at the last meeting of the Association for Psychoanalytic Thought (APT) prompted a debate between a professor of Greek philosophy and a psychoanalytic literary theorist, the central question of which, distilled, was:
 
 Is the *uncanny* a cathartic moment, a recognition and release, or
 
@@ -28,7 +28,7 @@ The film starts in kid-as-monster territory, from Amelia's narrative perspective
 
 We know from the beginning that it's her story, her shifting constellation of relationships: with Sam, with her sister, with her neighbor, with her dead husband. So, it should come as no surprise that the monster emerges not from Sam's psyche, but from his mother's.
 
-The film's eponymous, standard-return-of-repressed monster, is a condensation of nightmare associations that someone in her subjective position might have formed-- conventions absorbed from films of the horror genre we might assume belong to her generation and social class. These include elongated, blade-talons ala Freddy Kruger and a tall tophat like that of Dr. Caligari and so many evil heads to follow. We are visually reminded of other horror movie conventions by the shots and clips popping up repeatedly on the television in the family house.
+The film's eponymous, standard-return-of-repressed monster, is a condensation of nightmare associations that someone in her subjective position might have formed-- conventions absorbed from films of the horror genre we might assume belong to her generation and social class. These include elongated, blade-talons ala Freddy Krueger and a tall tophat like that of Dr. Caligari and so many evil heads to follow. We are visually reminded of other horror movie conventions by the shots and clips popping up repeatedly on the television in the family house.
 
 Amelia's narration becomes exponentially unreliable, and the audience becomes increasingly detached from her perspective. The film then movies-on deep into mother-as-psychological-monster territory.  While the film never fully mirrors Sam's subjective position, it comes closest when he employs his own probable heroic associations to contain his mother: *Home Alone* and Jonathan Swift. Yet, I don't think the film ever strays too far from Amelia's narration. Indeed, if the film's diegesis is tied to her narrative position, then the film's varying narrative reliability is correlative of the character's psychological state. This variation is presented so overtly in the movie that the reliability of the entire narration is called into question.
 

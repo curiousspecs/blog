@@ -15,7 +15,7 @@ A professor of Shakespeare from NKU offered another source of desire in the play
 
 John Hall, former director of the Cincinnati Psychoanalytic Institute and respondent to Maibom's paper added, "and the drugs can just be seen as allowing them free expression of their unconscious desires."
 
-"You see, you don't think the unconscious, the unconscious thinks you," explained a critical cultural theorist from UC, trying to force the speaker's logic against the limits of the Cartesan *cogito*, to the "Thing-that-thinks."
+"You see, you don't think the unconscious, the unconscious thinks you," explained a critical cultural theorist from UC, trying to force the speaker's logic against the limits of the Cartesian *cogito*, to the "Thing-that-thinks."
 
 "I don't know what that means," was Maibom's honest reply.
 

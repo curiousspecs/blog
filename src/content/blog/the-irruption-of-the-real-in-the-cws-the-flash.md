@@ -36,7 +36,7 @@ Barry has further familial issues. He is in love with his foster-sister, Iris. H
 
 ![theflash4](../../assets/wordpress/2015/12/theflash4.jpg)
 
-As Barry grows into his role of The Flash, he hears voices in his head. Through the audio transmitter in his mask, we typically hear the voice of Dr. Harrison Wells (Eobard Thawne), Cisco Ramon, or Dr. Caitlyn Snow instructing Barry on what to do or where to go. There are moments where Barry leaves behind the comm system or it goes out, but for the most part, he is guided not by his own conscious motivations, but by voices in his head.
+As Barry grows into his role of The Flash, he hears voices in his head. Through the audio transmitter in his mask, we typically hear the voice of Dr. Harrison Wells (Eobard Thawne), Cisco Ramon, or Dr. Caitlin Snow instructing Barry on what to do or where to go. There are moments where Barry leaves behind the comm system or it goes out, but for the most part, he is guided not by his own conscious motivations, but by voices in his head.
 
 ![theflash5](../../assets/wordpress/2015/12/theflash5.jpg)
 

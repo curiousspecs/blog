@@ -2,7 +2,7 @@
 title: "Psychoanalysis and Non-Western Art"
 description: "Yoshitoshi's Banchō Sarayashiki At last night's December meeting of the Association for Psychoanalytic Thought, I had the pleasure of speaking as part of a round-table discussion titled,…"
 pubDate: 2015-12-12
-tags: ["amae","asaje complex","association for psychoanalytic thought","freud","japanese art","lacan","psychoanalytic"]
+tags: ["amae","Ajase complex","association for psychoanalytic thought","freud","japanese art","lacan","psychoanalytic"]
 wordpressUrl: "https://mattbennettucba.wordpress.com/2015/12/12/psychoanalysis-and-non-western-art/"
 ---
 
@@ -19,6 +19,6 @@ Discussion afterwards was heated, as usual. An audience member noted that each o
 
 I must admit, however, that I have been reticent to apply psychoanalysis to the texts of non-Western cultures in my own work.  Just how much of the Oedipus, for example, can be attributed to the universal nature of the human unconscious, and how much to family structures and child-rearing practices particular to the West? I believe that a work of art cues us as to how we might read it, which hermeneutics might be appropriate in its interpretation, and I have sought to look for theories originating in the cultures in which the art was produced. My interests in Japanese art and film and in psychoanalytic theory have led me to the wish to find some psychoanalytic entrée into the interpretation of Japanese art. And yet, in the back of my mind echoes Lacan's infamous statement that the Japanese are unanalyzable. But what of their art?
 
-In seeking some means of applying psychoanalytic theory to Japanese art, I've researched broadly the place of psychoanalysis and Japan; read of the concept of *amae*, the *asaje complex*, and the "don't look" prohibition; and tried my best to find ways of utilizing distinctly Japanese psychoanalytic theory. Still, this is beyond my comfort level and I've not been successful in these endeavors. The Japanese psyche seems to me to be guided as much by Shinto, Buddhism, and distinct social practices as by Freudian, Kleinian, or Lacanian theories of the unconscious, desire, and subjectivity. Does this mean that employing psychoanalytic theory to analyze Japanese art would be misguided, a misapplication of that theory?
+In seeking some means of applying psychoanalytic theory to Japanese art, I've researched broadly the place of psychoanalysis and Japan; read of the concept of *amae*, the *Ajase complex*, and the "don't look" prohibition; and tried my best to find ways of utilizing distinctly Japanese psychoanalytic theory. Still, this is beyond my comfort level and I've not been successful in these endeavors. The Japanese psyche seems to me to be guided as much by Shinto, Buddhism, and distinct social practices as by Freudian, Kleinian, or Lacanian theories of the unconscious, desire, and subjectivity. Does this mean that employing psychoanalytic theory to analyze Japanese art would be misguided, a misapplication of that theory?
 
 I've not settled on an answer, but I certainly think it's worth investigating further.
