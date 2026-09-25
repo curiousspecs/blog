@@ -1,63 +1,63 @@
-# Astro Starter Kit: Blog
+# Curious Spectacles
+
+Matt Bennett's blog on film and psychoanalysis, and on making and teaching media with AI.
+
+**Live site:** https://curiousspecs.github.io/blog/
+
+Built with [Astro](https://astro.build) and published to GitHub Pages.
+
+## Where things live
+
+| What | Where |
+| :-- | :-- |
+| Posts | `src/content/blog/` (one Markdown file per post; the file name is the URL) |
+| About and Résumé | `src/content/pages/about.md`, `src/content/pages/resume.md` |
+| Publications list | `src/data/publications.json` |
+| Images | `src/assets/` (posts migrated from WordPress: `src/assets/wordpress/YYYY/MM/`) |
+| Site name, description, tagline | `src/consts.ts` |
+| Home page | `src/pages/index.astro` |
+| Colours, fonts, spacing | `src/styles/global.css` |
+
+The 2015–2018 posts were migrated from the old WordPress.com blog and are shown as the archive.
+
+## Writing a post
+
+Add a file to `src/content/blog/`, for example `writing-outcomes.md`, which will be published at
+`/blog/posts/writing-outcomes/`:
+
+```markdown
+---
+title: "Writing outcomes for tools that will not exist"
+description: "One sentence, under about 155 characters."
+pubDate: 2026-10-02
+heroImage: "../../assets/my-image.jpg"   # optional
+kind: "essay"                             # optional
+---
+
+The post text, in Markdown.
+```
+
+Images go in `src/assets/` and are referenced relatively, with alt text: `![What the image shows](../../assets/my-image.jpg)`.
+
+## Previewing locally
+
+Requires Node.js 22.12 or newer.
 
 ```sh
-npm create astro@latest -- --template blog
+npm ci            # first time, or after dependencies change
+npm run build
+npm run preview   # then open http://localhost:4321/blog/
 ```
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+For live reloading while editing, use `npm run dev` instead.
 
-Features:
+## Publishing
 
-- ✅ Minimal styling (make it your own!)
-- ✅ 100/100 Lighthouse performance
-- ✅ SEO-friendly with canonical URLs and Open Graph data
-- ✅ Sitemap support
-- ✅ RSS Feed support
-- ✅ Markdown & MDX support
+Every merge to `main` publishes the site automatically (`.github/workflows/deploy.yml`, about two minutes).
+Changes are made on a branch and reviewed in a pull request before merging.
 
-## 🚀 Project Structure
+## The `/blog` base path
 
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
-├── public/
-├── src/
-│   ├── assets/
-│   ├── components/
-│   ├── content/
-│   ├── layouts/
-│   └── pages/
-├── astro.config.mjs
-├── README.md
-├── package.json
-└── tsconfig.json
-```
-
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
-
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
-
-The `src/content/` directory contains "collections" of related Markdown and MDX documents. Use `getCollection()` to retrieve posts from `src/content/blog/`, and type-check your frontmatter using an optional schema. See [Astro's Content Collections docs](https://docs.astro.build/en/guides/content-collections/) to learn more.
-
-Any static assets, like images, can be placed in the `public/` directory.
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Check out [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
-
-## Credit
-
-This theme is based off of the lovely [Bear Blog](https://github.com/HermanMartinus/bearblog/).
+The site lives at `/blog/`, not at the domain root, so every internal link must include `/blog`. A link such as
+`/about` works in `npm run dev` but breaks on the live site. `CLAUDE.md` has the details, along with the rest of
+the guide that AI assistants working on this repository follow.
