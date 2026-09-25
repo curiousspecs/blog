@@ -1,5 +1,5 @@
 ---
-// Layout for standalone pages (About, CV): title, optional hero image and body; no date.
+// Layout for standalone pages (About, Résumé): the shared page header, optional banner and body; no date.
 import type { ImageMetadata } from 'astro';
 import { Image } from 'astro:assets';
 import BaseLayout from './BaseLayout.astro';
@@ -14,8 +14,8 @@ const { title, description, heroImage } = Astro.props;
 ---
 
 <BaseLayout title={title} description={description} image={heroImage}>
-	<article>
-		<header class="measure page-head">
+	<article class="wrap">
+		<header class="page-head">
 			<h1>{title}</h1>
 		</header>
 		{
@@ -25,22 +25,31 @@ const { title, description, heroImage } = Astro.props;
 				</figure>
 			)
 		}
-		<div class="measure prose">
+		<div class="prose body">
 			<slot />
 		</div>
 	</article>
 </BaseLayout>
 <style>
-	.page-head h1 {
-		margin: 0 0 2.5rem;
-	}
+	/*
+		The banner sits under the header rule with the same gap as between the title's baseline and the rule.
+		That gap is the header padding plus the part of the title's line box below its baseline, which for
+		Newsreader at line-height 1.05 measures 0.2626 × font size + 1.85px (within 0.1px from 34px to 54px).
+		The header's 1rem bottom margin collapses into this larger margin, so it is not added.
+	*/
 	.hero {
-		width: min(100%, var(--wide));
-		margin: 0 auto 3rem;
+		margin: calc(var(--page-head-pad) + 0.2626 * var(--h1-size) + 1.85px) 0 3rem;
 	}
 	.hero :global(img) {
 		width: 100%;
 		max-height: 60vh;
 		object-fit: cover;
+	}
+	.body {
+		max-width: var(--measure);
+		margin-top: 2.5rem;
+	}
+	.hero + .body {
+		margin-top: 0;
 	}
 </style>
