@@ -16,7 +16,13 @@ const schema = ({ image }: SchemaContext) =>
 const blog = defineCollection({
 	// Load Markdown and MDX files in the `src/content/blog/` directory.
 	loader: glob({ base: './src/content/blog', pattern: '**/*.{md,mdx}' }),
-	schema,
+	schema: (context: SchemaContext) =>
+		schema(context).extend({
+			// Tags and categories carried over from WordPress; not displayed yet.
+			tags: z.array(z.string()).optional(),
+			// The post's address on the old WordPress.com site, kept for redirects.
+			wordpressUrl: z.url().optional(),
+		}),
 });
 
 // Standalone pages (About, CV). Rendered by src/pages/about.astro and src/pages/cv.astro;
