@@ -8,7 +8,7 @@ kind: "essay"
 wordpressUrl: "https://mattbennettucba.wordpress.com/2015/11/26/sookie-and-symptom-vampire-and-void-irruption-of-the-real-in-true-blood/"
 ---
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/Ep-c1hQldmI" title="YouTube video" allow="encrypted-media; picture-in-picture" allowfullscreen="" loading="lazy"></iframe>
+[Watch on YouTube](https://www.youtube.com/watch?v=Ep-c1hQldmI) (age-restricted, so it plays on YouTube rather than here)
 
 If you have 21 minutes of your time that you don’t mind you’ll never get back, check out the presentation I delivered at **The Real and the Intermedial** conference last month at Sapientia University in Cluj-Napoca, Romania. It’s an “interimplication” of Lacanian psychoanalytic theory and HBO’s seven-season-long series, *True Blood*.
 

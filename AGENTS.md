@@ -37,17 +37,20 @@ the site and returns 404 on GitHub Pages, even though it may work in `astro dev`
   ```yaml
   ---
   title: "…"
-  description: "…"          # one sentence; used for previews and RSS
+  description: "…"          # one sentence, under ~155 characters; used for previews, RSS and social cards
   pubDate: 2026-09-25
   updatedDate: 2026-09-30   # optional
   heroImage: "../../assets/<file>.jpg"   # optional, relative to the post
   tags: ["film", "lacan"]   # optional; not displayed yet
+  kind: "essay"             # optional: essay | publication | event | link | note
   wordpressUrl: "https://mattbennettucba.wordpress.com/…"   # only on posts migrated from WordPress
   ---
   ```
   Posts are served at `/blog/posts/<file-name>/`; the archive is `/blog/posts/`.
 - **What a post is:** each post takes one decision and shows the reasoning behind it. The format serves
   that; don't pad it.
+- **Link posts don't republish.** A post that points to someone else's article carries at most one quoted
+  sentence (as a blockquote), the link and the attribution — never pasted paragraphs of the article.
 - **Images:** `![Alt text](../../assets/file.jpg)`, and alt text is required. For sizing or alignment, use
   Astro's `<Image>` component in `.mdx`. Don't use raw HTML `<img>` with hard-coded paths, because they skip
   the base and the optimizer.
@@ -56,8 +59,10 @@ the site and returns 404 on GitHub Pages, even though it may work in `astro dev`
 - **Publications** are data, not prose: one entry per publication in `src/data/publications.json` (title,
   venue, details, year, optional link, image and related post slug), rendered at `/blog/publications/`.
   Mark italics inside a title with `*asterisks*`.
-- **Migrated posts:** the 2015–2018 posts came from the WordPress export; their images are in
-  `src/assets/wordpress/YYYY/MM/`.
+- **Migrated posts are the archive:** the 2015–2018 posts came from the WordPress export; their images are
+  in `src/assets/wordpress/YYYY/MM/`. Any post with `wordpressUrl` is treated as archive: it is listed under
+  "Archive" after current posts, labelled on its page, and shown on the home page only as an essay or
+  publication. New posts have no `wordpressUrl`.
 
 ## Design
 
