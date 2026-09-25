@@ -3,12 +3,12 @@ import { getEntry, render } from 'astro:content';
 import Layout from '../layouts/BlogPost.astro';
 
 // 1. Fetch the markdown file from your content collection
-// (Assumes a collection named 'pages' or 'blog' contains your file)
-const entry = await getEntry('blog', 'about'); 
+// (from the 'pages' collection in src/content/pages/, not the blog collection)
+const entry = await getEntry('pages', 'about'); 
 
-// 2. Add an explicit fallback return or throw to satisfy TypeScript
+// 2. Fail the build if the page source is missing (a redirect to '/404' would skip the /blog base)
 if (!entry) {
-	return Astro.redirect('/404'); 
+	throw new Error('Missing src/content/pages/about.md');
 }
 
 // 3. Render the entry to extract the live Content component
