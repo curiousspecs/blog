@@ -13,7 +13,7 @@ export async function GET(context) {
 		site: new URL(`${base}/`, context.site).href,
 		items: posts.map((post) => ({
 			...post.data,
-			link: new URL(`${base}/blog/${post.id}/`, context.site).href,
+			link: new URL(`${base}/posts/${post.id}/`, context.site).href,
 		})),
 	});
 }
