@@ -5,6 +5,13 @@ import FormattedDate from '../components/FormattedDate.astro';
 import PostList from '../components/PostList.astro';
 import { SITE_DESCRIPTION, SITE_TAGLINE, SITE_TITLE } from '../consts';
 import BaseLayout from '../layouts/BaseLayout.astro';
+import { postImage } from '../lib/postImage';
+import bigClock from '../assets/wordpress/2017/03/bigclock.jpg';
+import maynard from '../assets/wordpress/2017/01/f-05095_1411.jpg';
+import flash from '../assets/wordpress/2015/12/theflash1.jpg';
+import trueBlood from '../assets/wordpress/2016/04/true-blood1.jpg';
+import babadook from '../assets/wordpress/2015/11/11181166_ori.jpg';
+import yoshitoshi from '../assets/wordpress/2015/12/yoshitoshi.jpg';
 
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 const posts = (await getCollection('blog')).sort(
@@ -19,7 +26,18 @@ const recent = current.filter((p) => p !== lead).slice(0, 5);
 // From the archive: the essays and publications, not the event notices or link posts.
 const fromArchive = archive
 	.filter((p) => p !== lead && (p.data.kind === 'essay' || p.data.kind === 'publication'))
-	.slice(0, 5);
+	.slice(0, 6);
+// Contact sheet beside the introduction: one still from each of six archive essays, linking to it.
+const contactSheet = [
+	{ slug: 'the-irruption-of-the-real-in-the-cws-the-flash', image: flash },
+	{ slug: 'psychoanalysis-and-non-western-art', image: yoshitoshi },
+	{ slug: 'new-publication-in-the-international-journal-of-the-literary-humanities-2', image: bigClock },
+	{ slug: 'the-uncanny', image: babadook },
+	{ slug: 'new-publication-in-the-international-journal-of-the-literary-humanities', image: maynard },
+	{ slug: 'new-publication-in-psyart-journal', image: trueBlood },
+]
+	.map((s) => ({ ...s, post: posts.find((p) => p.id === s.slug) }))
+	.filter((s) => s.post);
 const archiveYears =
 	archive.length > 0
 		? `${archive.at(-1)!.data.pubDate.getUTCFullYear()}–${archive[0].data.pubDate.getUTCFullYear()}`
@@ -29,6 +47,7 @@ const archiveYears =
 <BaseLayout title={SITE_TITLE} description={SITE_DESCRIPTION}>
 	<div class="wrap">
 		<section class="intro" aria-labelledby="intro-title">
+			<div class="intro-main">
 			<h1 id="intro-title">{SITE_TITLE}</h1>
 			<p class="tagline">{SITE_TAGLINE}</p>
 			<div class="intro-text">
@@ -36,6 +55,19 @@ const archiveYears =
 				<p>This blog began in 2015 as a place to read film and television through psychoanalysis: the uncanny, desire, grief, the ghost story. Those posts are still here, and that question hasn't gone away. It has picked up a second one. I'm on research leave this year, building a course on generative AI in creative work, asking media practitioners in India and at home how AI is changing production, and building AI systems that model Freud's account of the mind. I'm sharing that work here as it happens, including the parts that don't work.</p>
 				<p>The name has three meanings. A spectacle is something arresting to look at. Spectacles are the lenses you look through. A spec is the plan for building something. This blog is about all three.</p>
 			</div>
+			</div>
+			<ul class="contact-sheet" aria-label="From the archive">
+				{
+					contactSheet.map(({ post, image }) => (
+						<li>
+							<a href={`${base}/posts/${post!.id}/`} title={post!.data.title}>
+								<Image src={image} alt="" widths={[240, 480]} sizes="(min-width: 62rem) 12rem, 33vw" />
+								<span class="sr-only">{post!.data.title}</span>
+							</a>
+						</li>
+					))
+				}
+			</ul>
 		</section>
 
 		{
@@ -79,11 +111,28 @@ const archiveYears =
 
 		{
 			fromArchive.length > 0 && (
-				<section class="list-section" aria-labelledby="archive-title">
+				<section class="archive-section" aria-labelledby="archive-title">
 					<h2 id="archive-title" class="ui section-label">
 						From the archive, {archiveYears}
 					</h2>
-					<PostList posts={fromArchive} />
+					<ul class="cards">
+						{fromArchive.map((post) => {
+							const img = postImage(post);
+							return (
+								<li>
+									<a class="card" href={`${base}/posts/${post.id}/`}>
+										{img && (
+											<Image src={img} alt="" widths={[360, 540, 720]} sizes="(min-width: 62rem) 20rem, (min-width: 40rem) 45vw, 100vw" />
+										)}
+										<p class="meta">
+											<FormattedDate date={post.data.pubDate} />
+										</p>
+										<h3>{post.data.title}</h3>
+									</a>
+								</li>
+							);
+						})}
+					</ul>
 					<p class="all">
 						<a href={`${base}/posts/`}>All {posts.length} posts →</a>
 					</p>
@@ -97,6 +146,88 @@ const archiveYears =
 		padding-bottom: clamp(1.5rem, 4vw, 3rem);
 		margin-bottom: clamp(2rem, 5vw, 3.5rem);
 		border-bottom: 2px solid var(--ink);
+	}
+	@media (min-width: 56rem) {
+		.intro {
+			display: grid;
+			grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr);
+			gap: 3rem;
+			align-items: start;
+		}
+	}
+	.contact-sheet {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 0.5rem;
+		margin: 2rem 0 0;
+		padding: 0;
+		list-style: none;
+	}
+	@media (min-width: 56rem) {
+		.contact-sheet {
+			grid-template-columns: repeat(2, 1fr);
+			margin-top: 0.75rem;
+		}
+	}
+	.contact-sheet a {
+		display: block;
+		overflow: hidden;
+		background: var(--surface);
+	}
+	.contact-sheet :global(img) {
+		width: 100%;
+		aspect-ratio: 4 / 3;
+		object-fit: cover;
+		filter: grayscale(0.35);
+	}
+	.contact-sheet a:hover :global(img),
+	.contact-sheet a:focus-visible :global(img) {
+		filter: none;
+	}
+	@media (prefers-reduced-motion: no-preference) {
+		.contact-sheet :global(img) {
+			transition:
+				filter 0.3s ease,
+				transform 0.4s ease;
+		}
+		.contact-sheet a:hover :global(img) {
+			transform: scale(1.04);
+		}
+	}
+	.archive-section {
+		margin-bottom: clamp(2.5rem, 6vw, 4rem);
+	}
+	.cards {
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(min(100%, 17rem), 1fr));
+		gap: 2rem 1.75rem;
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+	.card {
+		display: block;
+		color: var(--ink);
+		text-decoration: none;
+	}
+	.card :global(img) {
+		width: 100%;
+		aspect-ratio: 3 / 2;
+		object-fit: cover;
+		object-position: 50% 25%;
+		margin-bottom: 0.75rem;
+		background: var(--surface);
+	}
+	.card .meta {
+		margin: 0 0 0.25rem;
+	}
+	.card h3 {
+		margin: 0;
+		font-size: 1.2rem;
+		line-height: 1.25;
+	}
+	.card:hover h3 {
+		color: var(--accent);
 	}
 	.intro h1 {
 		margin: 0 0 0.25rem;
