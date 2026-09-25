@@ -1,8 +1,9 @@
 ---
 title: "Fake Blood - Questions (unofficial music video)"
-description: "Fake Blood has new track, \"Questions (original mix),\" on the Maximono Selections compilation."
+description: "A fan music video I edited for Fake Blood's track \"Questions\"."
 pubDate: 2016-06-20
 tags: ["fake blood","maximono selections","music video","questions","the black ghosts","theo keating"]
+kind: "note"
 wordpressUrl: "https://mattbennettucba.wordpress.com/2016/06/20/fake-blood-questions-unofficial-music-video/"
 ---
 

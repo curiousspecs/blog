@@ -16,6 +16,7 @@ const { title, description, pubDate, updatedDate, heroImage, wordpressUrl, prev,
 	<article>
 		<header class="measure post-head">
 			<p class="meta">
+				{wordpressUrl && <span class="ui archive-label">Archive</span>}
 				<FormattedDate date={pubDate} />
 				{
 					updatedDate && (
@@ -74,6 +75,13 @@ const { title, description, pubDate, updatedDate, heroImage, wordpressUrl, prev,
 	}
 	.post-head .meta {
 		margin: 0;
+	}
+	.archive-label {
+		margin-right: 0.6rem;
+		padding-right: 0.6rem;
+		border-right: 1px solid var(--rule);
+		color: var(--accent);
+		font-size: 0.75rem;
 	}
 	.hero {
 		width: min(100%, var(--wide));

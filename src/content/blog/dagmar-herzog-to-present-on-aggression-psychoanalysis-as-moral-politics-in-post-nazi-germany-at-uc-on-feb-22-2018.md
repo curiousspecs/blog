@@ -1,9 +1,10 @@
 ---
 title: "Dagmar Herzog to present \"On Aggression: Psychoanalysis as Moral Politics in Post-Nazi Germany\" at UC on Feb. 22, 2018"
-description: "Dagmar Herzog, eminent historian and author of Cold War Freud: Psychoanalysis in an Age of Catastrophes, will be speaking at the University of Cincinnati for three separate events later this month."
+description: "Notice for Dagmar Herzog's UC lecture \"On Aggression: Psychoanalysis as Moral Politics in Post-Nazi Germany\", 22 February 2018."
 pubDate: 2018-02-04
 heroImage: "../../assets/wordpress/2018/02/coldwarfreud.jpg"
 tags: ["Germany","history","lecture","politics","psychoanalysis","university of cincinnati"]
+kind: "event"
 wordpressUrl: "https://mattbennettucba.wordpress.com/2018/02/04/dagmar-herzog-to-present-on-aggression-psychoanalysis-as-moral-politics-in-post-nazi-germany-at-uc-on-feb-22-2018/"
 ---
 
@@ -13,7 +14,7 @@ Her third speaking engagement is a public lecture: <strong>"On Aggression: Psyc
 
 If you plan to attend, please RSVP to Dr. Ethan Katz, Assistant Professor of History, via email at [katzen@ucmail.uc.edu](mailto:katzen@ucmail.uc.edu).
 
-![Photo of Dagmar Herzog](../../assets/wordpress/2018/02/dagmarherzog-e1517745581889.jpg)
+![Photo of Dagmar Herzog, smiling at a lectern.](../../assets/wordpress/2018/02/dagmarherzog-e1517745581889.jpg)
 
 **Dagmar Herzog** is Distinguished Professor of History and Daniel Rose Faculty Scholar at the Graduate Center, City University of New York. She conducts transnational and comparative research on how religion and secularization have affected social and political developments in modern Europe. An expert on the histories of Nazism and the Holocaust and their aftermath, she gives particular attention in her research to methodological innovations in critical source analysis and in gender and sexuality studies.
 

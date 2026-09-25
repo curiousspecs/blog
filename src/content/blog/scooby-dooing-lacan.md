@@ -1,9 +1,10 @@
 ---
 title: "Scooby-Dooing Lacan"
-description: "Scooby-Doo, Where Are You!"
+description: "Why Scooby-Doo never runs out of mysteries: the endless chase as a model of Lacanian desire, and what is really behind the mask."
 pubDate: 2015-11-14
 heroImage: "../../assets/wordpress/2015/11/tumblr_nxj3pxdupz1qh7aqwo1_500.jpg"
 tags: ["catharsis","desire","freud","lacan","objet petit a","peter brooks","scooby-doo","shoshana felman","the real","the symbolic","the uncanny"]
+kind: "essay"
 wordpressUrl: "https://mattbennettucba.wordpress.com/2015/11/14/scooby-dooing-lacan/"
 ---
 

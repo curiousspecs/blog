@@ -1,12 +1,13 @@
 ---
 title: "A Story about Psicanálise (Psychoanalysis) in Latin America"
-description: "Please consider attending the next event sponsored by the Association for Psychoanalytic Thought on Friday, January 22nd, 2016: A Story about Psicanálise (Psychoanalysis) in Latin America The…"
+description: "Notice for an APT screening and discussion of HBO Latin America's Psi, 22 January 2016, Cincinnati Psychoanalytic Institute."
 pubDate: 2015-12-23
 tags: ["association for psychoanalytic thought","psychoanalytic","television"]
+kind: "event"
 wordpressUrl: "https://mattbennettucba.wordpress.com/2015/12/23/a-story-about-psicanalise-psychoanalysis-in-latin-america/"
 ---
 
-![psi-870x400](../../assets/wordpress/2015/12/psi-870x400.jpg)
+![Title card for HBO Latin America's Psi: an empty analyst's consulting room with its couch, beside the words "Psi — nueva serie original".](../../assets/wordpress/2015/12/psi-870x400.jpg)
 
  Please consider attending the next event sponsored by the Association for Psychoanalytic Thought on **Friday, January 22nd, 2016:**
 

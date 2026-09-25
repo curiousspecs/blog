@@ -1,9 +1,10 @@
 ---
 title: "The Uncanny -cont.-"
-description: "It Follows \"I can stay over tonight if it makes you feel better.\""
+description: "Part two: in It Follows the uncanny lies less in the monster than in Paul's desire, an encounter with something that resists being put into words."
 pubDate: 2015-07-18
 heroImage: "../../assets/wordpress/2015/07/190237.jpg"
 tags: ["barthes","freud","horror","identification","lacan","lynch","the imaginary","the real","the symbolic","the uncanny","zizek"]
+kind: "essay"
 wordpressUrl: "https://mattbennettucba.wordpress.com/2015/07/18/the-uncanny-cont/"
 ---
 

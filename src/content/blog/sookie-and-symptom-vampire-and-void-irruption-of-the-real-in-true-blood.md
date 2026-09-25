@@ -1,9 +1,10 @@
 ---
 title: "Sookie and Symptom, Vampire and Void: Irruption of the Real in True Blood"
-description: "If you have 21 minutes of your time that you don’t mind you’ll never get back, check out the presentation I delivered at The Real and the Intermedial conference last month at Sapientia University in…"
+description: "My 21-minute conference talk: Sookie Stackhouse's telepathy as a symptom, and the vampire as the Real breaking through, in HBO's True Blood."
 pubDate: 2015-11-26
 heroImage: "../../assets/wordpress/2015/11/slide1.jpg"
 tags: ["conference","desire","jouissance","lacan","presentation","sinthome","subjectivity","symptom","the real","the symbolic","true blood","vampire","zizek"]
+kind: "essay"
 wordpressUrl: "https://mattbennettucba.wordpress.com/2015/11/26/sookie-and-symptom-vampire-and-void-irruption-of-the-real-in-true-blood/"
 ---
 

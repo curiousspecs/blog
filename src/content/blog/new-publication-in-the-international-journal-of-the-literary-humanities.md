@@ -1,12 +1,13 @@
 ---
 title: "New Publication in The International Journal of the Literary Humanities"
-description: "Totem and Tableaux: The Elegiac Photography of Hannah Maynard by Matt Bennett The International Journal of Literary Humanities, Volume 14, Issue 4, December 2016, pp.55-63."
+description: "My article on the elegiac photography of Hannah Maynard, the Victorian studio photographer, in The International Journal of the Literary Humanities 14.4."
 pubDate: 2017-01-16
 tags: ["Andre Bazin","canada","collage","Hannah Maynard","Laura Mulvey","multiple exposures","photo-statuary","photography","publications","Roland Barthes"]
+kind: "publication"
 wordpressUrl: "https://mattbennettucba.wordpress.com/2017/01/16/new-publication-in-the-international-journal-of-the-literary-humanities/"
 ---
 
-![f-05095_141](../../assets/wordpress/2017/01/f-05095_1411.jpg)
+![Hannah Maynard photograph: a staged Victorian studio tableau of two women in black, a boy, a child's plaster bust and framed portraits on easels.](../../assets/wordpress/2017/01/f-05095_1411.jpg)
 
 ## [Totem and Tableaux: The Elegiac Photography of Hannah Maynard](https://cgscholar.com/bookstore/works/totem-and-tableaux)
 

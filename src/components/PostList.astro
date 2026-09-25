@@ -6,9 +6,18 @@ import FormattedDate from './FormattedDate.astro';
 interface Props {
 	posts: CollectionEntry<'blog'>[];
 	headingLevel?: 'h2' | 'h3';
+	// Show each post's kind (Essay, Link, Event…) beside its date.
+	showKind?: boolean;
 }
 
-const { posts, headingLevel = 'h3' } = Astro.props;
+const { posts, headingLevel = 'h3', showKind = false } = Astro.props;
+const kindLabel = {
+	essay: 'Essay',
+	publication: 'Publication',
+	event: 'Event',
+	link: 'Link',
+	note: 'Note',
+} as const;
 const Heading = headingLevel;
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 ---
@@ -19,6 +28,7 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 			<li>
 				<p class="meta">
 					<FormattedDate date={post.data.pubDate} />
+					{showKind && post.data.kind && <span class="kind">{kindLabel[post.data.kind]}</span>}
 				</p>
 				<Heading class="title">
 					<a href={`${base}/posts/${post.id}/`}>{post.data.title}</a>
@@ -44,6 +54,14 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 	}
 	.meta {
 		margin: 0 0 0.3rem;
+	}
+	.kind {
+		margin-left: 0.6rem;
+		padding-left: 0.6rem;
+		border-left: 1px solid var(--rule);
+		text-transform: uppercase;
+		letter-spacing: 0.06em;
+		font-size: 0.75rem;
 	}
 	.title {
 		margin: 0;

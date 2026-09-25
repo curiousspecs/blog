@@ -1,12 +1,13 @@
 ---
 title: "Psychoanalysis and Non-Western Art"
-description: "Yoshitoshi's Banchō Sarayashiki At last night's December meeting of the Association for Psychoanalytic Thought, I had the pleasure of speaking as part of a round-table discussion titled,…"
+description: "Should psychoanalysis be applied to Japanese art? An open question after an APT round table, with Yoshitoshi's ghost of Okiku as the test case."
 pubDate: 2015-12-12
 tags: ["amae","Ajase complex","association for psychoanalytic thought","freud","japanese art","lacan","psychoanalytic"]
+kind: "essay"
 wordpressUrl: "https://mattbennettucba.wordpress.com/2015/12/12/psychoanalysis-and-non-western-art/"
 ---
 
-![Yoshitoshi](../../assets/wordpress/2015/12/yoshitoshi.jpg)
+![Yoshitoshi woodblock print from New Forms of Thirty-Six Ghosts: the ghost of Okiku, pale and translucent in a checked kimono, rising beside a well under willow branches.](../../assets/wordpress/2015/12/yoshitoshi.jpg)
 
   
 Yoshitoshi's *Banchō Sarayashiki*

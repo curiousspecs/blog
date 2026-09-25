@@ -1,9 +1,10 @@
 ---
 title: "Hermia's Desire"
-description: "The audience at September's meeting of the Association for Psychoanalytic Thought took part in a true clash of fundamental ideological positions on empathy: philosophical and psychoanalytical."
+description: "A reply to a paper on empathy in A Midsummer Night's Dream: what Hermia desires is a lost object, and Lysander is only its stand-in."
 pubDate: 2015-11-08
 heroImage: "../../assets/wordpress/2015/11/de2a8a3f5a3d45409abb38fd4c12b574.jpg"
 tags: ["association for psychoanalytic thought","cogito","desire","empathy","lacan","objet petit a","psychoanalytic","unconscious"]
+kind: "essay"
 wordpressUrl: "https://mattbennettucba.wordpress.com/2015/11/08/hermias-desire/"
 ---
 

@@ -20,6 +20,8 @@ const blog = defineCollection({
 		schema(context).extend({
 			// Tags and categories carried over from WordPress; not displayed yet.
 			tags: z.array(z.string()).optional(),
+			// What sort of post this is; archive posts show it as a label.
+			kind: z.enum(['essay', 'publication', 'event', 'link', 'note']).optional(),
 			// The post's address on the old WordPress.com site, kept for redirects.
 			wordpressUrl: z.url().optional(),
 		}),

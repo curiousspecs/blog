@@ -1,12 +1,13 @@
 ---
 title: "New Publication in The International Journal of the Literary Humanities"
-description: "Totem and Tableaux: The Elegiac Photography of Hannah Maynard by Matt Bennett The International Journal of Literary Humanities, Volume 14, Issue 4, December 2016, pp.55-63. Abstract: Although there is no evidence that Canadian photographer Hannah Maynard (1834–1918) produced post-mortem photographic images in her fifty-year-long career as a portraitist, she did create a kind of recurring elegy [&hellip;]"
+description: "My article \"L'Art Noir: The Perfidy of Images in Film Noir\", in The International Journal of the Literary Humanities 15.1."
 pubDate: 2017-03-15
 tags: ["art","cinema","film","film noir","freud","Laura","movies","noir","Out of the Past","painting","publications","Scarlet Street","sublimation","The Big Clock","The Maltese Falcon"]
+kind: "publication"
 wordpressUrl: "https://mattbennettucba.wordpress.com/2017/03/15/new-publication-in-the-international-journal-of-the-literary-humanities-2/"
 ---
 
-## [![bigclock](../../assets/wordpress/2017/03/bigclock.jpg)L'Art Noir: The Perfidy of Images in Film Noir](http://ijhl.cgpublisher.com/product/pub.246/prod.126)
+## [![Still from The Big Clock (1948): the painter Louise Patterson shows off one of her abstract canvases to George Stroud and another man.](../../assets/wordpress/2017/03/bigclock.jpg)L'Art Noir: The Perfidy of Images in Film Noir](http://ijhl.cgpublisher.com/product/pub.246/prod.126)
 
 #### by Matt Bennett
 

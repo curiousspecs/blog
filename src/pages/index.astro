@@ -3,33 +3,49 @@ import { Image } from 'astro:assets';
 import { getCollection } from 'astro:content';
 import FormattedDate from '../components/FormattedDate.astro';
 import PostList from '../components/PostList.astro';
-import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
+import { SITE_DESCRIPTION, SITE_TAGLINE, SITE_TITLE } from '../consts';
 import BaseLayout from '../layouts/BaseLayout.astro';
 
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 const posts = (await getCollection('blog')).sort(
 	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
 );
-// The newest post with a hero image leads the page; the next posts follow as a list.
-const lead = posts.find((p) => p.data.heroImage) ?? posts[0];
-const recent = posts.filter((p) => p !== lead).slice(0, 5);
+// Posts migrated from WordPress (2015–2018) are the archive; everything else is current.
+const current = posts.filter((p) => !p.data.wordpressUrl);
+const archive = posts.filter((p) => p.data.wordpressUrl);
+// The newest current post leads the page; other current posts follow.
+const lead = current[0] ?? posts[0];
+const recent = current.filter((p) => p !== lead).slice(0, 5);
+// From the archive: the essays and publications, not the event notices or link posts.
+const fromArchive = archive
+	.filter((p) => p !== lead && (p.data.kind === 'essay' || p.data.kind === 'publication'))
+	.slice(0, 5);
+const archiveYears =
+	archive.length > 0
+		? `${archive.at(-1)!.data.pubDate.getUTCFullYear()}–${archive[0].data.pubDate.getUTCFullYear()}`
+		: '';
 ---
 
 <BaseLayout title={SITE_TITLE} description={SITE_DESCRIPTION}>
 	<div class="wrap">
 		<section class="intro" aria-labelledby="intro-title">
 			<h1 id="intro-title">{SITE_TITLE}</h1>
-			<!--
-				PLACEHOLDER: Matt writes this introduction. Replace this comment with a paragraph
-				(a <p> element) introducing the blog. Nothing is shown here until then.
-			-->
+			<p class="tagline">{SITE_TAGLINE}</p>
+			<div class="intro-text">
+				<p>I'm Matt Bennett. I teach film and media production at the University of Cincinnati Blue Ash, and I write about what images do to us and how we make them.</p>
+				<p>This blog began in 2015 as a place to read film and television through psychoanalysis: the uncanny, desire, grief, the ghost story. Those posts are still here, and that question hasn't gone away. It has picked up a second one. I'm on research leave this year, building a course on generative AI in creative work, asking media practitioners in India and at home how AI is changing production, and building AI systems that model Freud's account of the mind. I'm sharing that work here as it happens, including the parts that don't work.</p>
+				<p>The name has three meanings. A spectacle is something arresting to look at. Spectacles are the lenses you look through. A spec is the plan for building something. This blog is about all three.</p>
+			</div>
 		</section>
 
 		{
 			lead && (
 				<section class="lead" aria-labelledby="lead-title">
 					<h2 class="ui section-label">Latest</h2>
-					<a class="lead-card" href={`${base}/posts/${lead.id}/`}>
+					<a
+						class:list={['lead-card', { 'has-image': lead.data.heroImage }]}
+						href={`${base}/posts/${lead.id}/`}
+					>
 						{lead.data.heroImage && (
 							<Image
 								src={lead.data.heroImage}
@@ -52,11 +68,22 @@ const recent = posts.filter((p) => p !== lead).slice(0, 5);
 
 		{
 			recent.length > 0 && (
-				<section class="recent" aria-labelledby="recent-title">
+				<section class="list-section" aria-labelledby="recent-title">
 					<h2 id="recent-title" class="ui section-label">
 						Recent posts
 					</h2>
 					<PostList posts={recent} />
+				</section>
+			)
+		}
+
+		{
+			fromArchive.length > 0 && (
+				<section class="list-section" aria-labelledby="archive-title">
+					<h2 id="archive-title" class="ui section-label">
+						From the archive, {archiveYears}
+					</h2>
+					<PostList posts={fromArchive} />
 					<p class="all">
 						<a href={`${base}/posts/`}>All {posts.length} posts →</a>
 					</p>
@@ -66,21 +93,34 @@ const recent = posts.filter((p) => p !== lead).slice(0, 5);
 	</div>
 </BaseLayout>
 <style>
-	.intro h1 {
-		margin: 0 0 1rem;
-		font-size: clamp(2.6rem, 1.6rem + 5vw, 5rem);
-		font-style: italic;
-		font-weight: 400;
-	}
 	.intro {
 		padding-bottom: clamp(1.5rem, 4vw, 3rem);
 		margin-bottom: clamp(2rem, 5vw, 3.5rem);
 		border-bottom: 2px solid var(--ink);
 	}
-	.intro :global(p) {
+	.intro h1 {
+		margin: 0 0 0.25rem;
+		font-size: clamp(2.6rem, 1.6rem + 5vw, 5rem);
+		font-style: italic;
+		font-weight: 400;
+	}
+	.tagline {
+		margin: 0 0 1.75rem;
+		font-family: var(--font-ui);
+		font-size: 0.95rem;
+		letter-spacing: 0.06em;
+		text-transform: uppercase;
+		color: var(--accent);
+	}
+	.intro-text {
 		max-width: var(--measure);
+	}
+	.intro-text p:first-child {
 		font-size: 1.2em;
 		line-height: 1.5;
+	}
+	.intro-text p:last-child {
+		margin-bottom: 0;
 	}
 	.section-label {
 		margin: 0 0 1.25rem;
@@ -93,11 +133,13 @@ const recent = posts.filter((p) => p !== lead).slice(0, 5);
 	.lead-card {
 		display: grid;
 		gap: 1.25rem 2.5rem;
+		max-width: var(--measure);
 		color: var(--ink);
 		text-decoration: none;
 	}
 	@media (min-width: 48rem) {
-		.lead-card {
+		.lead-card.has-image {
+			max-width: none;
 			grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr);
 			align-items: center;
 		}
@@ -124,8 +166,9 @@ const recent = posts.filter((p) => p !== lead).slice(0, 5);
 		margin: 0;
 		color: var(--muted);
 	}
-	.recent {
+	.list-section {
 		max-width: var(--measure);
+		margin-bottom: clamp(2.5rem, 6vw, 4rem);
 	}
 	.all {
 		margin-top: 1.5rem;

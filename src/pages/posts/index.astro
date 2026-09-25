@@ -9,11 +9,19 @@ const posts = (await getCollection('blog')).sort(
 );
 
 // Group by year, newest year first.
-const years = [...new Set(posts.map((p) => p.data.pubDate.getUTCFullYear()))];
-const byYear = years.map((year) => ({
-	year,
-	posts: posts.filter((p) => p.data.pubDate.getUTCFullYear() === year),
-}));
+type Post = (typeof posts)[number];
+const groupByYear = (list: Post[]) =>
+	[...new Set(list.map((p) => p.data.pubDate.getUTCFullYear()))].map((year) => ({
+		year,
+		posts: list.filter((p) => p.data.pubDate.getUTCFullYear() === year),
+	}));
+
+// Posts migrated from WordPress are the archive, listed after current posts.
+const current = groupByYear(posts.filter((p) => !p.data.wordpressUrl));
+const archivePosts = posts.filter((p) => p.data.wordpressUrl);
+const archive = groupByYear(archivePosts);
+const archiveYears =
+	archive.length > 0 ? `${archive.at(-1)!.year}–${archive[0].year}` : '';
 ---
 
 <BaseLayout title="Posts" description={SITE_DESCRIPTION}>
@@ -24,7 +32,7 @@ const byYear = years.map((year) => ({
 		</header>
 		{posts.length === 0 && <p>No posts yet.</p>}
 		{
-			byYear.map(({ year, posts }) => (
+			current.map(({ year, posts }) => (
 				<section class="year" aria-labelledby={`y${year}`}>
 					<h2 id={`y${year}`} class="year-label">
 						{year}
@@ -32,6 +40,26 @@ const byYear = years.map((year) => ({
 					<PostList posts={posts} />
 				</section>
 			))
+		}
+		{
+			archive.length > 0 && (
+				<section class="archive" aria-labelledby="archive">
+					<header class="archive-head">
+						<h2 id="archive">Archive, {archiveYears}</h2>
+						<p class="meta">
+							{archivePosts.length} posts from the original blog at mattbennettucba.wordpress.com
+						</p>
+					</header>
+					{archive.map(({ year, posts }) => (
+						<section class="year" aria-labelledby={`y${year}`}>
+							<h3 id={`y${year}`} class="year-label">
+								{year}
+							</h3>
+							<PostList posts={posts} showKind />
+						</section>
+					))}
+				</section>
+			)
 		}
 	</div>
 </BaseLayout>
@@ -61,6 +89,21 @@ const byYear = years.map((year) => ({
 	}
 	.year:last-child {
 		border-bottom: 0;
+	}
+	.archive {
+		margin-top: 2rem;
+	}
+	.archive-head {
+		padding: 1.5rem 0 1rem;
+		border-top: 2px solid var(--ink);
+		border-bottom: 1px solid var(--rule);
+	}
+	.archive-head h2 {
+		margin: 0 0 0.3rem;
+		font-size: 1.6rem;
+	}
+	.archive-head .meta {
+		margin: 0;
 	}
 	.year-label {
 		margin: 0;

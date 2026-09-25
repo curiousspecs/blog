@@ -1,11 +1,12 @@
 ---
 title: "The Recurring American Nightmare — A Freudian Perspective"
-description: "After the deadly shooting in Roseburg, Oregon, earlier this month late-night talk show host Stephen Colbert momentarily struck a somber rather than comic note."
+description: "A pointer to Christopher Miller's depth-psychology reading of America's recurring mass shootings, starting from Stephen Colbert after Roseburg."
 pubDate: 2015-12-13
+kind: "link"
 wordpressUrl: "https://mattbennettucba.wordpress.com/2015/12/13/the-recurring-american-nightmare-a-freudian-perspective/"
 ---
 
-After the deadly shooting in Roseburg, Oregon, earlier this month late-night talk show host Stephen Colbert momentarily struck a somber rather than comic note. Like many, Colbert admitted his uncertainty about what to do in the face of the unremitting gun violence plaguing the U.S.: “Some say the answer is stricter gun laws; others say the answer is mental health care, that we need better treatment or just to keep the guns out of the hands of the insane. Maybe it’s both, I honestly don’t know.” He concluded, “But I do know that one of the definitions of insanity is changing nothing and then pretending that something will change.” For those of us who join Colbert in wishing for positive change in such matters, perhaps we might turn to a few late ruminations from psychoanalyst Sigmund Freud for guidance and inspiration...
+> After the deadly shooting in Roseburg, Oregon, earlier this month late-night talk show host Stephen Colbert momentarily struck a somber rather than comic note.
 
 [The Recurring American Nightmare — A Freudian Perspective](http://blog.mythfire.com/?p=3697)
 

@@ -1,12 +1,13 @@
 ---
 title: "New publication in PsyArt Journal"
-description: "Sookie and Symptom, Vampire and Void: Irruption of the Real in True Blood February 18, 2016 · Volume 20 (2016) Abstract Sookie Stackhouse, the protagonist of HBO’s True Blood, is a telepath who has…"
+description: "My article in PsyArt, volume 20: Sookie Stackhouse's telepathy as a symptom and the vampire as the Real in HBO's True Blood."
 pubDate: 2016-04-09
 tags: ["freud","horror","lacan","objet petit a","psychoanalysis","psychoanalytic","television","the real","the symbolic","unconscious","zizek"]
+kind: "publication"
 wordpressUrl: "https://mattbennettucba.wordpress.com/2016/04/09/new-publication-in-psyart-journal/"
 ---
 
-![true-blood1](../../assets/wordpress/2016/04/true-blood1.jpg)
+![Promotional cast photo for True Blood: Sookie Stackhouse reclines against the vampire Bill in a moonlit forest, with the ensemble gathered around them.](../../assets/wordpress/2016/04/true-blood1.jpg)
 
 ### Sookie and Symptom, Vampire and Void: Irruption of the Real in True Blood
 

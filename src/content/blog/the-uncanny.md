@@ -1,9 +1,10 @@
 ---
 title: "The Uncanny"
-description: "The screening and discussion at the last meeting of the Association for Psychoanalytic Thought (APT) prompted a debate between a professor of Greek philosophy and a psychoanalytic literary…"
+description: "After an APT screening of Purana Mandir: why the uncanny lingers when a scare does not, read through Lacan, with The Babadook as the counter-example."
 pubDate: 2015-07-11
 heroImage: "../../assets/wordpress/2015/11/11181166_ori.jpg"
 tags: ["association for psychoanalytic thought","freud","horror","identification","lacan","suture","the babadook","the real","the uncanny","zizek"]
+kind: "essay"
 wordpressUrl: "https://mattbennettucba.wordpress.com/2015/07/11/the-uncanny/"
 ---
 

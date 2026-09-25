@@ -1,14 +1,15 @@
 ---
 title: "Spring Psychoanalytic Poetry Festival"
-description: "Presented in association with The Freud Museum - London Saturday 12 March 2016, 9:30 am – 5:00 pm Word & Image In talks, readings and conversations, speakers from the worlds of poetry, film and…"
+description: "Notice for the Freud Museum London's Word & Image poetry festival, 12 March 2016."
 pubDate: 2016-01-30
 tags: ["freud","poetry","psychoanalytic"]
+kind: "event"
 wordpressUrl: "https://mattbennettucba.wordpress.com/2016/01/30/spring-psychoanalytic-poetry-festival/"
 ---
 
 Presented in association with The Freud Museum - London
 
-![Freud Museum Logo](http://poetrysociety.org.uk/wp-content/uploads/2015/02/FreudMuseumLogo.gif)
+![Freud Museum London logo.](http://poetrysociety.org.uk/wp-content/uploads/2015/02/FreudMuseumLogo.gif)
 
 ### Saturday 12 March 2016, 9:30 am – 5:00 pm
 
