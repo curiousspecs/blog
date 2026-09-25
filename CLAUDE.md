@@ -51,7 +51,7 @@ the site and returns 404 on GitHub Pages, even though it may work in `astro dev`
 - **Images:** `![Alt text](../../assets/file.jpg)`, and alt text is required. For sizing or alignment, use
   Astro's `<Image>` component in `.mdx`. Don't use raw HTML `<img>` with hard-coded paths, because they skip
   the base and the optimizer.
-- **Standalone pages** (About, CV) are pages, not posts. Their text lives in `src/content/pages/` and they
+- **Standalone pages** (About, Résumé) are pages, not posts. Their text lives in `src/content/pages/` and they
   render through `src/layouts/PageLayout.astro`. They must not appear in the post list or the RSS feed.
 - **Publications** are data, not prose: one entry per publication in `src/data/publications.json` (title,
   venue, details, year, optional link, image and related post slug), rendered at `/blog/publications/`.
