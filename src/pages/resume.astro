@@ -3,11 +3,11 @@ import { getEntry, render } from 'astro:content';
 import PageLayout from '../layouts/PageLayout.astro';
 
 // From the 'pages' collection in src/content/pages/, not the blog collection.
-const entry = await getEntry('pages', 'cv');
+const entry = await getEntry('pages', 'resume');
 
 // Fail the build if the page source is missing (a redirect to '/404' would skip the /blog base).
 if (!entry) {
-	throw new Error('Missing src/content/pages/cv.md');
+	throw new Error('Missing src/content/pages/resume.md');
 }
 
 const { Content } = await render(entry);

@@ -9,6 +9,11 @@ export default defineConfig({
 	site: 'https://curiousspecs.github.io',
 	base: '/blog',
 	integrations: [mdx(), sitemap()],
+	// The Résumé page was the CV page; keep its old address working.
+	redirects: {
+		// Destinations are not base-prefixed by Astro, so include /blog here.
+		'/cv': '/blog/resume/',
+	},
 	fonts: [
 		{
 			// Reading face for headings and body text. Variable (weight 200–800, optical size);

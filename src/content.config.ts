@@ -25,7 +25,7 @@ const blog = defineCollection({
 		}),
 });
 
-// Standalone pages (About, CV). Rendered by src/pages/about.astro and src/pages/cv.astro;
+// Standalone pages (About, Résumé). Rendered by src/pages/about.astro and src/pages/resume.astro;
 // kept out of the blog collection so they never appear in the post list or the RSS feed.
 const pages = defineCollection({
 	loader: glob({ base: './src/content/pages', pattern: '**/*.{md,mdx}' }),
