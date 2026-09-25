@@ -41,21 +41,32 @@ the site and returns 404 on GitHub Pages, even though it may work in `astro dev`
   pubDate: 2026-09-25
   updatedDate: 2026-09-30   # optional
   heroImage: "../../assets/<file>.jpg"   # optional, relative to the post
+  tags: ["film", "lacan"]   # optional; not displayed yet
+  wordpressUrl: "https://mattbennettucba.wordpress.com/…"   # only on posts migrated from WordPress
   ---
   ```
+  Posts are served at `/blog/posts/<file-name>/`; the archive is `/blog/posts/`.
 - **What a post is:** each post takes one decision and shows the reasoning behind it. The format serves
   that; don't pad it.
 - **Images:** `![Alt text](../../assets/file.jpg)`, and alt text is required. For sizing or alignment, use
   Astro's `<Image>` component in `.mdx`. Don't use raw HTML `<img>` with hard-coded paths, because they skip
   the base and the optimizer.
-- **Standalone pages** (About, CV) are pages, not posts. They must not appear in the post list or the RSS
-  feed.
+- **Standalone pages** (About, CV) are pages, not posts. Their text lives in `src/content/pages/` and they
+  render through `src/layouts/PageLayout.astro`. They must not appear in the post list or the RSS feed.
+- **Publications** are data, not prose: one entry per publication in `src/data/publications.json` (title,
+  venue, details, year, optional link, image and related post slug), rendered at `/blog/publications/`.
+  Mark italics inside a title with `*asterisks*`.
+- **Migrated posts:** the 2015–2018 posts came from the WordPress export; their images are in
+  `src/assets/wordpress/YYYY/MM/`.
 
 ## Design
 
-The current design is Astro's blog starter with the Atkinson font. **Design direction is Matt's.** Propose
-changes with a screenshot or a short rationale in the PR; don't restyle the site as a side effect of another
-task. Keep the site accessible: sufficient contrast, keyboard navigation, alt text, semantic headings.
+The design is an editorial reading layout: Newsreader (self-hosted, `src/assets/fonts/`) for reading text,
+Atkinson Hyperlegible for interface text, colour tokens in `src/styles/global.css` with a dark mode that
+follows the reader's system setting, and a spectacles mark in the header and favicon. Every page is built on
+`src/layouts/BaseLayout.astro`. **Design direction is Matt's.** Propose changes with a screenshot or a short
+rationale in the PR; don't restyle the site as a side effect of another task. Keep the site accessible: text
+contrast of at least 4.5:1 in both colour schemes, keyboard navigation, alt text, semantic headings.
 
 ## Development
 
