@@ -1,0 +1,14 @@
+---
+// GitHub Pages serves this for any missing URL under /blog/.
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+---
+
+<BaseLayout title="Page not found" description="This page does not exist.">
+	<div class="measure">
+		<h1>Page not found</h1>
+		<p>There is no page at this address. It may have moved when the blog left WordPress.</p>
+		<p><a href={`${base}/`}>Go to the home page</a> or <a href={`${base}/posts/`}>browse all posts</a>.</p>
+	</div>
+</BaseLayout>

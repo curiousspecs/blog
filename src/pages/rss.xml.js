@@ -4,13 +4,16 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 
 export async function GET(context) {
 	const posts = await getCollection('blog');
+	// `context.site` has no base path ('/blog'), so build every URL from site + base.
+	const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 	return rss({
 		title: SITE_TITLE,
 		description: SITE_DESCRIPTION,
-		site: context.site,
+		// The feed's <link> is the site home.
+		site: new URL(`${base}/`, context.site).href,
 		items: posts.map((post) => ({
 			...post.data,
-			link: `/blog/${post.id}/`,
+			link: new URL(`${base}/posts/${post.id}/`, context.site).href,
 		})),
 	});
 }

@@ -1,0 +1,129 @@
+---
+import { getCollection } from 'astro:content';
+import PostList from '../../components/PostList.astro';
+import { SITE_DESCRIPTION } from '../../consts';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const posts = (await getCollection('blog')).sort(
+	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
+);
+
+// Group by year, newest year first.
+type Post = (typeof posts)[number];
+const groupByYear = (list: Post[]) =>
+	[...new Set(list.map((p) => p.data.pubDate.getUTCFullYear()))].map((year) => ({
+		year,
+		posts: list.filter((p) => p.data.pubDate.getUTCFullYear() === year),
+	}));
+
+// Posts migrated from WordPress are the archive, listed after current posts.
+const current = groupByYear(posts.filter((p) => !p.data.wordpressUrl));
+const archivePosts = posts.filter((p) => p.data.wordpressUrl);
+const archive = groupByYear(archivePosts);
+const archiveYears =
+	archive.length > 0 ? `${archive.at(-1)!.year}–${archive[0].year}` : '';
+---
+
+<BaseLayout title="Posts" description={SITE_DESCRIPTION}>
+	<div class="wrap">
+		<header class="head">
+			<h1>Posts</h1>
+			<p class="meta">{posts.length} {posts.length === 1 ? 'post' : 'posts'}</p>
+		</header>
+		{posts.length === 0 && <p>No posts yet.</p>}
+		{
+			current.map(({ year, posts }) => (
+				<section class="year" aria-labelledby={`y${year}`}>
+					<h2 id={`y${year}`} class="year-label">
+						{year}
+					</h2>
+					<PostList posts={posts} />
+				</section>
+			))
+		}
+		{
+			archive.length > 0 && (
+				<section class="archive" aria-labelledby="archive">
+					<header class="archive-head">
+						<h2 id="archive">Archive, {archiveYears}</h2>
+						<p class="meta">
+							{archivePosts.length} posts from the original blog at mattbennettucba.wordpress.com
+						</p>
+					</header>
+					{archive.map(({ year, posts }) => (
+						<section class="year" aria-labelledby={`y${year}`}>
+							<h3 id={`y${year}`} class="year-label">
+								{year}
+							</h3>
+							<PostList posts={posts} showKind />
+						</section>
+					))}
+				</section>
+			)
+		}
+	</div>
+</BaseLayout>
+<style>
+	.head {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: baseline;
+		justify-content: space-between;
+		gap: 0.5rem 2rem;
+		padding-bottom: 1.5rem;
+		margin-bottom: 1rem;
+		border-bottom: 2px solid var(--ink);
+	}
+	.head h1 {
+		margin: 0;
+	}
+	.head .meta {
+		margin: 0;
+	}
+	.year {
+		display: grid;
+		grid-template-columns: 7rem 1fr;
+		gap: 0 2rem;
+		padding-block: 2rem;
+		border-bottom: 1px solid var(--rule);
+	}
+	.year:last-child {
+		border-bottom: 0;
+	}
+	.archive {
+		margin-top: 2rem;
+	}
+	.archive-head {
+		padding: 1.5rem 0 1rem;
+		border-top: 2px solid var(--ink);
+		border-bottom: 1px solid var(--rule);
+	}
+	.archive-head h2 {
+		margin: 0 0 0.3rem;
+		font-size: 1.6rem;
+	}
+	.archive-head .meta {
+		margin: 0;
+	}
+	.year-label {
+		margin: 0;
+		font-size: 1.9rem;
+		font-weight: 400;
+		font-style: italic;
+		color: var(--accent);
+		line-height: 1;
+	}
+	@media (min-width: 48rem) {
+		.year-label {
+			position: sticky;
+			top: 1.5rem;
+			align-self: start;
+		}
+	}
+	@media (max-width: 48rem) {
+		.year {
+			grid-template-columns: 1fr;
+			gap: 1.25rem;
+		}
+	}
+</style>

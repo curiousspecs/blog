@@ -1,0 +1,139 @@
+---
+import { Image } from 'astro:assets';
+import { type CollectionEntry, getCollection } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const all = (await getCollection('publications')).sort((a, b) => b.data.year - a.data.year);
+const groups = [
+	{ id: 'articles', label: 'Peer-reviewed articles', items: all.filter((p) => p.data.kind === 'article') },
+	{ id: 'catalogue', label: 'Catalogue essays', items: all.filter((p) => p.data.kind === 'catalogue') },
+].filter((g) => g.items.length);
+
+// Titles mark italics with *asterisks* (e.g. *True Blood*); everything else is plain text.
+const escape = (s: string) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+const withItalics = (s: string) => escape(s).replace(/\*([^*]+)\*/g, '<em>$1</em>');
+type Pub = CollectionEntry<'publications'>;
+const titleHtml = (p: Pub) => withItalics(p.data.title);
+---
+
+<BaseLayout title="Publications" description="Publications by Matt Bennett.">
+	<div class="wrap">
+		<header class="head">
+			<h1>Publications</h1>
+		</header>
+		{
+			groups.map((g) => (
+				<section class="group" aria-labelledby={g.id}>
+					<h2 id={g.id} class="ui label">
+						{g.label}
+					</h2>
+					<ol class="pubs">
+						{g.items.map((p) => (
+							<li class:list={['pub', { 'has-image': p.data.image }]}>
+								{p.data.image && (
+									<div class="thumb">
+										<Image src={p.data.image} alt="" widths={[240, 480]} sizes="12rem" />
+									</div>
+								)}
+								<div class="body">
+									<p class="meta">{p.data.year}</p>
+									<h3 class="title">
+										{p.data.url ? (
+											<a href={p.data.url} set:html={`“${titleHtml(p)}”`} />
+										) : (
+											<span set:html={`“${titleHtml(p)}”`} />
+										)}
+									</h3>
+									<p class="cite">
+										<em>{p.data.venue}</em> {p.data.details}
+									</p>
+									{p.data.post && (
+										<p class="links meta">
+											<a href={`${base}/posts/${p.data.post}/`}>
+												Blog post<span class="sr-only"> about {p.data.title.replace(/\*/g, '')}</span>
+											</a>
+										</p>
+									)}
+								</div>
+							</li>
+						))}
+					</ol>
+				</section>
+			))
+		}
+	</div>
+</BaseLayout>
+<style>
+	.head {
+		padding-bottom: 1.5rem;
+		margin-bottom: 1rem;
+		border-bottom: 2px solid var(--ink);
+	}
+	.head h1 {
+		margin: 0;
+	}
+	.group {
+		padding-block: 2rem;
+	}
+	.label {
+		margin: 0 0 1.5rem;
+		color: var(--muted);
+		font-weight: 400;
+	}
+	.pubs {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		max-width: 52rem;
+	}
+	.pub {
+		display: grid;
+		grid-template-columns: 1fr;
+		gap: 1rem 2rem;
+		padding-block: 1.75rem;
+		border-top: 1px solid var(--rule);
+	}
+	.pub:first-child {
+		border-top: 0;
+		padding-top: 0;
+	}
+	@media (min-width: 40rem) {
+		.pub.has-image {
+			grid-template-columns: 11rem 1fr;
+		}
+	}
+	.thumb :global(img) {
+		width: 100%;
+		aspect-ratio: 4 / 3;
+		object-fit: cover;
+	}
+	.meta {
+		margin: 0 0 0.3rem;
+	}
+	.title {
+		margin: 0;
+		font-size: 1.4rem;
+		font-weight: 500;
+		line-height: 1.25;
+	}
+	.title a {
+		color: var(--ink);
+		text-decoration: none;
+	}
+	.title a:hover {
+		color: var(--accent);
+		text-decoration: underline;
+	}
+	.cite {
+		margin: 0.5rem 0 0;
+		color: var(--muted);
+		font-size: 1.02rem;
+	}
+	.links {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.4rem 1.5rem;
+		margin-top: 0.75rem;
+	}
+</style>
