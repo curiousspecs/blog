@@ -43,7 +43,7 @@ Majors and non-majors produce real creative work with generative tools under per
 **Chair, Curriculum Subcommittee** *(2025 -- 2026)*  
 Media Communications & Technology, University of Cincinnati Blue Ash
 
-**Generative AI Community of Practice Â· Generative AI Learning Circle** *(2024 -- 2025)*  
+**Generative AI Community of Practice · Generative AI Learning Circle** *(2024 -- 2025)*  
 Center for the Enhancement of Teaching and Learning, University of Cincinnati
 
 **B.A.S. in Front-End Web Development --- program proposal** *(2021 -- 2025)*  
@@ -75,7 +75,7 @@ Four-year cross-departmental curriculum design effort; authored the proposal doc
 
 - Adobe Creative Cloud (Premiere, Photoshop, Illustrator, After Effects, Firefly)
 - Higgsfield AI
-- Davinci Resolve 21
+- DaVinci Resolve 21
 - Canva
 - video and audio production
 - pre-production planning
@@ -148,7 +148,7 @@ Art, office, casting, set, and grip/electric departments for Levi Strauss, Human
 - Adobe 99U
 - Cincy AI Week
 - Ethical AI Symposium
-- National Academies of Science, AI and the workforce
+- National Academies of Sciences, AI and the workforce
 - AlgoRhythms (Indiana University)
 
 **Invited and conference presentations** *(2019 -- 2025)*  
@@ -162,7 +162,7 @@ Art, office, casting, set, and grip/electric departments for Levi Strauss, Human
 
 ### EDUCATION
 
-**M.S., Artificial Intelligence --- Woolf/Udacity** *(2026 -- current)*
+**M.S., Artificial Intelligence --- Woolf/Udacity** *(2026 -- present)*
 
 **M.A., Humanities --- Xavier University** *(2008)*
 

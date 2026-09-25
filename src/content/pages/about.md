@@ -9,7 +9,7 @@ heroImage: "../../assets/banner4.jpg"
 
 He holds a dual Bachelor of Arts in English (British Literature concentration) and Communication from the University of Louisville, a Bachelor of Arts in Electronic Media from Xavier University and a Master of Arts in Humanities from Xavier University. He completed a graduate certificate in Asian Studies from the College of Arts and Sciences and additional graduate-level coursework in Art History at the College of Design, Architecture, Art, and Planning, both at the University of Cincinnati. He has worked professionally in the commercial and non-profit sectors as a web and graphic designer; as a videographer, grip, and production assistant in film and video production; and most recently as Electronic Media Coordinator for Cincinnati Metro public transit.
 
-At UCBA, Matt teaches American Cinema, World Cinema, Media Aesthetics, Media Design Foundations, Preproduction Planning, Professional Practice, Degree Project Studio, and Applied Media Methods. His areas of research are film genre studies (horror and science fiction), media aesthetics, computational approaches to psychoanalytic theory, generative AI in creative and pedagogical practice, narrative analysis and construction, Asian national cinemas and visual cultures, gender/race/LGBTQIA+ issues in visual representation,.
+At UCBA, Matt teaches American Cinema, World Cinema, Media Aesthetics, Media Design Foundations, Preproduction Planning, Professional Practice, Degree Project Studio, and Applied Media Methods. His areas of research are film genre studies (horror and science fiction), media aesthetics, computational approaches to psychoanalytic theory, generative AI in creative and pedagogical practice, narrative analysis and construction, Asian national cinemas and visual cultures, gender/race/LGBTQIA+ issues in visual representation.
 
 His current research applies computational methods to psychoanalytic theory. *Das Mich / Project Psyche* models the Freudian structural apparatus as a system of interacting agents running on local hardware, mapping each functional requirement to a named metapsychological mechanism with citations to both the Strachey Standard Edition and the Solms Revised Standard Edition. *Havenpass* develops a director/actor architecture for narrative agent systems, deriving its design from the agent-architecture and interactive-narrative research literature. Alongside this work he has completed university coursework in applied artificial intelligence and machine learning, programming, database management, and cognitive psychology.
 
@@ -17,8 +17,8 @@ He has presented research internationally at Cambridge University in Cambridge, 
 
 Select peer-reviewed publications include:
 
-- "*L'Art Noir*: The Perfidy of Images in Film Noir." *The International Journal of Literary Humanities* 15, no. 1 (2017): 9-14.
-- "Totem and Tableaux: The Elegaic Photography of Hannah Maynard," *The International Journal of Literary Humanities* 14, no. 4 (2016): 55-63.
+- "*L'Art Noir*: The Perfidy of Images in Film Noir," *The International Journal of Literary Humanities* 15, no. 1 (2017): 9-14.
+- "Totem and Tableaux: The Elegiac Photography of Hannah Maynard," *The International Journal of Literary Humanities* 14, no. 4 (2016): 55-63.
 - "Sookie and Symptom, Vampire and Void: Irruption of the Real in *True Blood*," *PsyArt Journal* 20 (February 18, 2016): 92-103.
 - "The Pomegranate: Marker of Cyclical Time, Seeds of Eternity," *International Journal of Humanities and Social Sciences* 1, no. 19 (December 2011): 52-59.
 - "Good Woman or Evil Woman? Draupadī as Active Agent in *The Mahābhārata*," *International Journal of the Humanities* 8, no. 9 (January 2011): 145-154.
