@@ -44,4 +44,4 @@ for me, music is **necessary**. what's necessary in your writing setting? what's
 
 and what, were you to move it to another room, would make your writing easier? a clock? a television set? a cat?
 
-[Click here to see the script I've been quoting above. If you're following along with the readings I've been talking about that are appropriate for what I've been discussing, then you should have started Tierno last time. Finish up his book and, as I've told you there is no substitute for reading screenplays to learn your craft, read this one.](http://www.pages.drexel.edu/~ina22/splaylib/Screenplay-Fantastic_Mr_Fox.pdf)
+[Click here to see the script I've been quoting above. If you're following along with the readings I've been talking about that are appropriate for what I've been discussing, then you should have started Tierno last time. Finish up his book and, as I've told you there is no substitute for reading screenplays to learn your craft, read this one.](https://imsdb.com/scripts/Fantastic-Mr-Fox.html)
