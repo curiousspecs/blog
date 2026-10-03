@@ -6,7 +6,7 @@ kind: "essay"
 archive: true
 ---
 
-![IMAGE TO LOCALIZE — a laptop open on a cream leather recliner at night](https://64.media.tumblr.com/69d047a64542804ad00f87d7c675eb8b/tumblr_na6jjnMgY51qh7aqwo1_640.jpg)
+![A laptop open on a cream leather recliner at night](../../assets/narrative-instant/office-recliner.jpg)
 
 *My office. For tonight, anyway.*
 

@@ -10,7 +10,7 @@ you never know when inspiration will come to you and you need to be able to quic
 
 i admit, i try. i love the jimmy olsen feeling of palming a flip-cover moleskin with one hand, and licking the tip of your lead pencil, held intently by the other. i spend more time typing up notes i've handwritten in those little notebooks, though, than i do making use of the notes to create work. others, perhaps stubbornly holding on to comfortable, lo-tech creativity aids, endlessly shuffle ideas inscribed on 3 x 5 index cards into full houses and straights of creativity.
 
-![IMAGE TO LOCALIZE — Evernote inbox, 5 Aug 2014, screenshot](https://64.media.tumblr.com/5db191161ebfd183bef108fb8fc15ff3/tumblr_inline_n9x6qiVPp71qg7w4u.png)
+![My Evernote inbox in August 2014](../../assets/narrative-instant/idea-cistern-evernote-inbox.png)
 
 **my *idea file* is evernote.**
 

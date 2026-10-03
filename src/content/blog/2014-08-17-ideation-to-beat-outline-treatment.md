@@ -6,7 +6,7 @@ kind: "essay"
 archive: true
 ---
 
-![IMAGE TO LOCALIZE — Evernote, the "participant observer" note at the ideation stage, screenshot](https://64.media.tumblr.com/b0aeccb8260308d97612e1564ece341f/97e44f599b2d81a9-f4/s540x810/860a421ed17d20a071021195f43dc943763d3946.png)
+![The participant observer note in Evernote at the ideation stage](../../assets/narrative-instant/ideation-evernote-1.png)
 
 my workflow, one i'd like to encourage you to consider applying or adapting to match your own working methods, is a natural extension of fiddlin' in my idea cistern; adding, editing, deleting, combining and recombining notes. i do this until the ideas begin to clarify, until the buckets of cistern water from the stream of consciousness go through my own configurations of systems of filtration, purification, condensation, and collection.
 
@@ -28,7 +28,7 @@ heraclitus, in this one fragment of wisdom, explains how the unconscious works c
 
 the more i work in a note, the more it takes the form of a hybrid beat outline and treatment and even, in snatches, a drafted script. something that looks like this in evernote:
 
-![IMAGE TO LOCALIZE — Evernote, the "outline participant observer" note at the beat-outline stage, screenshot](https://64.media.tumblr.com/b6a1b762aede78e1655497a25615fac2/97e44f599b2d81a9-61/s540x810/afc31d2d3e498831a01ba00a2a6b4dedb6e42fad.png)
+![The participant observer outline in Evernote at the beat-outline stage](../../assets/narrative-instant/ideation-evernote-2.png)
 
 note what differences you see in the earlier version above. these might give you an idea of what kind of shape my notes are in before i decide they're ready to move out of the creative - writing folder and into @NEEDS ACTION, the evernote folder that serves as my active to-do list.
 

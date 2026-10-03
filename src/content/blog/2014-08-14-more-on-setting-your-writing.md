@@ -10,7 +10,7 @@ setting is not just about place, although that's certainly important to it. sett
 
 so setting is not just a place, but a complex interaction of visual and audio elements that work together to contain the action and dialogue. in terms of audio, ambient sounds, quality of vocal sound as lines are delivered, dynamics, diegetic music, etc. will all affect the film's setting. but, just how many of these do you, as screenwriter, really have control over in a film, and how much should you include in the script? how much visual material should you describe, for that matter? we're back to a question I introduced last week, the question of *Bestimmtheit*, the question of determinacy, or specification of detail. the question, **"how much detail do i provide?"**
 
-![IMAGE TO LOCALIZE — a Google Books page with a passage on Bestimmtheit highlighted, screenshot](https://64.media.tumblr.com/0d57349d9974f44f8b70a32884af55c3/tumblr_inline_naacrxFjHs1qg7w4u.png)
+![A Google Books page with a passage on Bestimmtheit highlighted](../../assets/narrative-instant/bestimmtheit-google-books.png)
 
 **the answer to this question is simple and straightforward, "as much detail as is necessary and relevant to the story."** these two criteria are the two against which you should evaluate everything you consider including in your script. comedy writers, note: there are exceptions to these two criteria for your particular genre, producing a particular kind of non-sequitur humor.
 

@@ -24,7 +24,7 @@ i'm forever apologizing for something that i can never fully explain. something 
 
 sometimes those perceptions are accurate. i'm only human. sometimes i burn out. sometimes my morale is low. sometimes i just need a mental health break. in a tent. under some trees. in a campground in long island.
 
-![IMAGE TO LOCALIZE — Evernote note "10-2 my fertile period", screenshot](https://64.media.tumblr.com/3926f7f9510c137f1fe09cdc3f7ce314/tumblr_inline_n9u4qftAlJ1qg7w4u.png)
+![Evernote note titled “10-2 my fertile period”](../../assets/narrative-instant/fertile-crescent-evernote.png)
 
 my fertile crescent is a curse, and a gift. it is my period. inconvenient as it is, it's also my most valuable commodity. time. is. money.
 
