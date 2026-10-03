@@ -5,7 +5,7 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 
 <footer class="site-footer">
 	<div class="wrap inner meta">
-		<p>&copy; {today.getFullYear()} Matt Bennett. All rights reserved.</p>
+		<p>&copy; {today.getFullYear()} Matt Bennett<span class="long">. All rights reserved.</span></p>
 		<ul class="links">
 			<li><a href={`${base}/rss.xml`}>RSS</a></li>
 			<li>
@@ -35,7 +35,8 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 </footer>
 <style>
 	/* Sticky: pinned to the bottom of the window while the page scrolls under it, and back in its
-	   place at the end of the page. html's scroll-padding-bottom (global.css) keeps focus clear of it. */
+	   place at the end of the page. One row, about 44px tall; html's scroll-padding-bottom
+	   (global.css) keeps focused elements clear of it. */
 	.site-footer {
 		position: sticky;
 		bottom: 0;
@@ -46,18 +47,19 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 	}
 	.inner {
 		display: flex;
-		flex-wrap: wrap;
+		flex-wrap: nowrap;
 		align-items: center;
 		justify-content: space-between;
-		gap: 0.25rem 2rem;
-		padding-block: 0.75rem calc(0.75rem + env(safe-area-inset-bottom, 0px));
+		gap: 1rem;
+		padding-block: 0.55rem calc(0.55rem + env(safe-area-inset-bottom, 0px));
+		line-height: 1.4;
+		white-space: nowrap;
 	}
 	p {
 		margin: 0;
 	}
 	.links {
 		display: flex;
-		flex-wrap: wrap;
 		gap: 1.25rem;
 		margin: 0;
 		padding: 0;
@@ -72,5 +74,20 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 	}
 	a:hover {
 		color: var(--accent);
+	}
+	/* Phones: keep one row by shortening the copyright line and dropping the service glyphs (the words stay). */
+	@media (max-width: 30rem) {
+		.long,
+		.links svg {
+			display: none;
+		}
+		.links {
+			gap: 0.9rem;
+		}
+	}
+	@media print {
+		.site-footer {
+			position: static;
+		}
 	}
 </style>
