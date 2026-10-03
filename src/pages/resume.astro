@@ -11,8 +11,22 @@ if (!entry) {
 }
 
 const { Content } = await render(entry);
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 ---
 
 <PageLayout title={entry.data.title} description={entry.data.description} heroImage={entry.data.heroImage}>
-	<Content />
+	<div class="resume">
+		<p class="cv"><a href={`${base}/cv/Bennett_CV.pdf`} download>Download CV (PDF, 3 pp.)</a></p>
+		<Content />
+	</div>
 </PageLayout>
+<style>
+	.cv {
+		font-family: var(--font-ui);
+		font-size: 0.95rem;
+	}
+	/* The section headings are h2 (the page title is the h1); keep them at the size they had as h3. */
+	.resume :global(h2) {
+		font-size: 1.3em;
+	}
+</style>

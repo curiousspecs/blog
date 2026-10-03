@@ -4,6 +4,8 @@ description: "how you develop ideas is unique to you."
 pubDate: 2014-08-17
 kind: "essay"
 archive: true
+series: "narrative instant"
+seriesOrder: 5
 ---
 
 ![The participant observer note in Evernote at the ideation stage](../../assets/narrative-instant/ideation-evernote-1.png)

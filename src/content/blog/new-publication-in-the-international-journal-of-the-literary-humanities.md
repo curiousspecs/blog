@@ -11,7 +11,7 @@ wordpressUrl: "https://mattbennettucba.wordpress.com/2017/01/16/new-publication-
 
 ## [Totem and Tableaux: The Elegiac Photography of Hannah Maynard](https://doi.org/10.18848/2327-7912/CGP/v14i04/55-63)
 
-#### by Matt Bennett
+### by Matt Bennett
 
 *The International Journal of Literary Humanities*, Volume 14, Issue 4, December 2016, pp.55-63.
 

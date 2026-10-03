@@ -4,6 +4,8 @@ description: "don't try to force yourself into an unnatural writing schedule. it
 pubDate: 2014-08-05
 kind: "essay"
 archive: true
+series: "narrative instant"
+seriesOrder: 1
 ---
 
 let's back up a few steps. i've mentioned a couple of times that one of the purposes of my media scriptwriting is to build a *habit* of writing. let's first talk about *WHEN* to find your fix.

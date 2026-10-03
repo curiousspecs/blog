@@ -9,7 +9,7 @@ wordpressUrl: "https://mattbennettucba.wordpress.com/2017/03/15/new-publication-
 
 ## [![Still from The Big Clock (1948): the painter Louise Patterson shows off one of her abstract canvases to George Stroud and another man.](../../assets/wordpress/2017/03/bigclock.jpg)L'Art Noir: The Perfidy of Images in Film Noir](https://doi.org/10.18848/2327-7912/CGP/v15i01/9-14)
 
-#### by Matt Bennett
+### by Matt Bennett
 
 *The International Journal of Literary Humanities*, Volume 15, Issue 1, March 2017, pp.9-14.
 

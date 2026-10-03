@@ -5,11 +5,11 @@ pubDate: 2026-09-17
 heroImage: "../../assets/banner1.jpg"
 ---
 
-### PROFILE
+## PROFILE
 
 Media and technology educator with more than twenty years of university teaching and a prior career in web development, design, and film and video production. Builds and ships multi-agent AI systems on local infrastructure, and designs the curriculum, policy, and disclosure practices that put generative tools into classrooms and creative workflows responsibly. Works at the intersection of AI capability and the humanities questions it raises, and is completing an M.S. in Artificial Intelligence.
 
-### PROFESSIONAL EXPERIENCE
+## PROFESSIONAL EXPERIENCE
 
 **AI Trainer – Media and Design Specialist**  
 Contract, remote
@@ -29,7 +29,7 @@ Clients included Paramount Parks, Cincinnati Metro, Lang Financial, IO Productio
 **Film and Video Production Assistant, freelance** *(2001 – 2004)*  
 Art, office, casting, set, and grip/electric departments for Levi Strauss, Humana, Speedway, LaRosa’s, and the National Underground Railroad Freedom Center.
 
-### AI PROJECTS
+## AI PROJECTS
 
 **Das Mich / Project Psyche — Creator and Developer** *(2026 – present)*  
 Multi-agent system modeling the Freudian structural apparatus as interacting agents running entirely on local hardware with no cloud transmission. Python, local model serving via Ollama, vector storage in ChromaDB. Every functional requirement is mapped to a named theoretical mechanism with dual-edition source citations, a specification discipline that makes the system’s behavior auditable against the theory it implements.
@@ -43,7 +43,7 @@ Digital Technology Solutions, University of Cincinnati
 **Beta Tester, Adobe Firefly Video Generation** *(2025)*  
 Adobe
 
-### TECHNICAL SKILLS
+## TECHNICAL SKILLS
 
 **Languages and data:**
 
@@ -78,7 +78,7 @@ Adobe
 - project management
 - technical writing and specification
 
-### SPEAKING AND PROFESSIONAL ENGAGEMENT
+## SPEAKING AND PROFESSIONAL ENGAGEMENT
 
 **Member, Enterprise Technology Association** *(2026 – present)*  
 Cincy AI Week community
@@ -88,17 +88,18 @@ Association for Computational Creativity
 
 **Recent AI conferences** *(2025 – 2026)*
 
-- AI4
-- Adobe MAX
-- Google Cloud Next
-- SHIFT: The Creative AI Summit
-- Canva AI Vision
-- Adobe 99U
-- Cincy AI Week
-- Ethical AI Symposium
-- AI & Emerging Technology Symposium (UC Digital Technology Solutions)
-- AlgoRhythms (Indiana University)
-- AAIRC: Applied AI Research Conference (Ai4)
+- **Ai4 2026**, Las Vegas, Nevada (in person, August 4–6, 2026)
+- **AAIRC: Applied AI Research Conference** (Ai4), organized by California State University, Las Vegas, Nevada (in person, research summit day, August 2026)
+- **Adobe 99U Conference**, Adobe, online (2026)
+- **SHIFT: The Creative AI Summit**, Superside, online (2026)
+- **Cincy AI Week**, Enterprise Technology Association, Cincinnati, Ohio (2026)
+- **Canva AI Vision 2026**, Canva, online (2026)
+- **Google Cloud Next**, Google, online (2026)
+- **AlgoRhythms: Exploring Human-Centered Creativity in Music & AI**, Jacobs School of Music Innovation, Indiana University Bloomington, online (2026)
+- **Adobe MAX 2025**, Adobe, online (2025)
+- **Mindvalley AI Summit**, Mindvalley, online (2025)
+- **Ethical AI Symposium**, UC Libraries Research & Data Sciences, University of Cincinnati (2025)
+- **AI & Emerging Technology Symposium**, Digital Technology Solutions (DTS), University of Cincinnati (2025)
 
 **Invited and conference presentations** *(2010 – 2025)*
 
@@ -109,7 +110,7 @@ Association for Computational Creativity
 - Sapientia University, Romania
 - University of British Columbia Okanagan
 
-### AI IN TEACHING AND CURRICULUM
+## AI IN TEACHING AND CURRICULUM
 
 **Exploring GenAI in Creative Workflows — course under development** *(Spring 2027)*  
 Applied Media Communications majors and non-majors produce real creative work with generative tools under per-assignment rules on permitted use, scheduled checkpoints, and two-way disclosure: students document their AI use as graded work, and the instructor documents his in the course materials.
@@ -123,7 +124,7 @@ Community of Practice: CET&L, University of Cincinnati · Learning Circle: Unive
 **B.A.S. in Web Content and Communications — program proposal** *(2021 – 2025)*  
 Four-year cross-departmental curriculum design effort; authored the proposal documents and presented to the University Academic Committee
 
-### EDUCATION
+## EDUCATION
 
 **M.S., Artificial Intelligence — Udacity Institute of AI and Technology** (Degree conferred through Woolf) *(2026 – present, in-progress)*
 
@@ -135,7 +136,7 @@ Four-year cross-departmental curriculum design effort; authored the proposal doc
 
 **Graduate certificate, Asian Studies — University of Cincinnati** *(2012)*
 
-### AI CREDENTIALS AND COURSEWORK
+## AI CREDENTIALS AND COURSEWORK
 
 **Certifications** *(2024 – 2026)*
 

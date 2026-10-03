@@ -7,7 +7,7 @@ kind: "note"
 wordpressUrl: "https://mattbennettucba.wordpress.com/2016/06/20/fake-blood-questions-unofficial-music-video/"
 ---
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/ERDghgiqjw8" title="YouTube video" allow="encrypted-media; picture-in-picture" allowfullscreen="" loading="lazy"></iframe>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/ERDghgiqjw8" title="YouTube video: Fake Blood - Questions (unofficial music video)" allow="encrypted-media; picture-in-picture" allowfullscreen="" loading="lazy"></iframe>
 
 **Fake Blood** has new track, "Questions (original mix)," on the *Maximono Selections* compilation. I couldn't resist editing together a little video to accompany it.
 

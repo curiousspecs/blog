@@ -6,6 +6,7 @@ import type { ImageMetadata } from 'astro';
 import { getImage } from 'astro:assets';
 import { SITE_TITLE } from '../consts';
 import { Font } from 'astro:assets';
+import siteBanner from '../assets/banner2.jpg';
 
 interface Props {
 	title: string;
@@ -22,9 +23,17 @@ const { title, description, image } = Astro.props;
 // BASE_URL is the site's base path ('/blog'); files under public/ and generated feeds live beneath it.
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 
-// Social-card image: a 1200px-wide JPEG of the page's hero image, when it has one.
-const socialImage = image ? await getImage({ src: image, width: 1200, format: 'jpg' }) : undefined;
-const socialImageURL = socialImage ? new URL(socialImage.src, Astro.site) : undefined;
+// Social-card image: a 1200 × 630 JPEG cropped from the page's image (a post's hero or first image), or else
+// from the site banner.
+const socialImage = await getImage({
+	src: image ?? siteBanner,
+	width: 1200,
+	height: 630,
+	fit: 'cover',
+	position: 'top',
+	format: 'jpg',
+});
+const socialImageURL = new URL(socialImage.src, Astro.site);
 ---
 
 <!-- Global Metadata -->
@@ -68,10 +77,10 @@ const socialImageURL = socialImage ? new URL(socialImage.src, Astro.site) : unde
 {!isNotFound && <meta property="og:url" content={canonicalURL} />}
 <meta property="og:title" content={title} />
 <meta property="og:description" content={description} />
-{socialImageURL && <meta property="og:image" content={socialImageURL} />}
+<meta property="og:image" content={socialImageURL} />
 
 <!-- Twitter -->
-<meta name="twitter:card" content={socialImageURL ? 'summary_large_image' : 'summary'} />
+<meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content={title} />
 <meta name="twitter:description" content={description} />
-{socialImageURL && <meta name="twitter:image" content={socialImageURL} />}
+<meta name="twitter:image" content={socialImageURL} />

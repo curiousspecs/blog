@@ -21,7 +21,14 @@ const { title, description, heroImage } = Astro.props;
 		{
 			heroImage && (
 				<figure class="hero">
-					<Image src={heroImage} alt="" widths={[640, 960, 1280, 1600]} sizes="(min-width: 62rem) 62rem, 100vw" />
+					<Image
+						src={heroImage}
+						alt=""
+						widths={[640, 960, 1280, 1600]}
+						sizes="(min-width: 62rem) 62rem, 100vw"
+						loading="eager"
+						fetchpriority="high"
+					/>
 				</figure>
 			)
 		}

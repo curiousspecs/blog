@@ -1,6 +1,7 @@
 ---
-// Layout for a single post: title block, optional hero image, body and
+// Layout for a single post: title block, series links, optional hero image, body and
 // previous/next navigation.
+import type { ImageMetadata } from 'astro';
 import { Image } from 'astro:assets';
 import type { CollectionEntry } from 'astro:content';
 import FormattedDate from '../components/FormattedDate.astro';
@@ -8,12 +9,19 @@ import BaseLayout from './BaseLayout.astro';
 import { isArchive } from '../lib/isArchive';
 
 type Neighbour = { title: string; href: string } | undefined;
-type Props = CollectionEntry<'blog'>['data'] & { prev?: Neighbour; next?: Neighbour };
+type SeriesNav = { name: string; part: number; total: number; prev: Neighbour; next: Neighbour };
+type Props = CollectionEntry<'blog'>['data'] & {
+	prev?: Neighbour;
+	next?: Neighbour;
+	seriesNav?: SeriesNav;
+	// The image for social cards: the hero, or else the first image in the post.
+	socialImage?: ImageMetadata;
+};
 
-const { title, description, pubDate, updatedDate, heroImage, prev, next } = Astro.props;
+const { title, description, pubDate, updatedDate, heroImage, prev, next, seriesNav, socialImage } = Astro.props;
 ---
 
-<BaseLayout title={title} description={description} image={heroImage}>
+<BaseLayout title={title} description={description} image={socialImage ?? heroImage}>
 	<article>
 		<header class="measure post-head">
 			<p class="meta">
@@ -31,9 +39,39 @@ const { title, description, pubDate, updatedDate, heroImage, prev, next } = Astr
 			<h1>{title}</h1>
 		</header>
 		{
+			seriesNav && (
+				<nav class="measure series" aria-label={`${seriesNav.name} series`}>
+					<p class="ui">
+						{seriesNav.name}, part {seriesNav.part} of {seriesNav.total}
+					</p>
+					{(seriesNav.prev || seriesNav.next) && (
+						<ul>
+							{seriesNav.prev && (
+								<li>
+									<span class="ui">Previous</span> <a href={seriesNav.prev.href}>{seriesNav.prev.title}</a>
+								</li>
+							)}
+							{seriesNav.next && (
+								<li>
+									<span class="ui">Next</span> <a href={seriesNav.next.href}>{seriesNav.next.title}</a>
+								</li>
+							)}
+						</ul>
+					)}
+				</nav>
+			)
+		}
+		{
 			heroImage && (
 				<figure class="hero">
-					<Image src={heroImage} alt="" widths={[640, 960, 1280, 1600]} sizes="(min-width: 62rem) 62rem, 100vw" />
+					<Image
+						src={heroImage}
+						alt=""
+						widths={[640, 960, 1280, 1600]}
+						sizes="(min-width: 62rem) 62rem, 100vw"
+						loading="eager"
+						fetchpriority="high"
+					/>
 				</figure>
 			)
 		}
@@ -76,6 +114,32 @@ const { title, description, pubDate, updatedDate, heroImage, prev, next } = Astr
 		border-right: 1px solid var(--rule);
 		color: var(--accent);
 		font-size: 0.75rem;
+	}
+	.series {
+		margin-bottom: 2.5rem;
+		padding: 0.9rem 1.1rem;
+		border: 1px solid var(--rule);
+		font-size: 1rem;
+		line-height: 1.4;
+	}
+	.series p {
+		margin: 0;
+		color: var(--muted);
+	}
+	.series ul {
+		display: grid;
+		gap: 0.35rem;
+		margin: 0.6rem 0 0;
+		padding: 0;
+		list-style: none;
+	}
+	.series li {
+		display: grid;
+		grid-template-columns: 5.5rem 1fr;
+		align-items: baseline;
+	}
+	.series li .ui {
+		color: var(--muted);
 	}
 	.hero {
 		width: min(100%, var(--wide));
