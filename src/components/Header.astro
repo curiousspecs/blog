@@ -1,6 +1,7 @@
 ---
 import { SITE_TITLE } from '../consts';
 import HeaderLink from './HeaderLink.astro';
+import ThemeToggle from './ThemeToggle.astro';
 
 // Site home, including the /blog base.
 const homeHref = `${import.meta.env.BASE_URL.replace(/\/$/, '')}/`;
@@ -26,6 +27,7 @@ const homeHref = `${import.meta.env.BASE_URL.replace(/\/$/, '')}/`;
 				<li><HeaderLink href="/publications">Publications</HeaderLink></li>
 				<li><HeaderLink href="/about">About</HeaderLink></li>
 				<li><HeaderLink href="/resume">Résumé</HeaderLink></li>
+				<li class="toggle"><ThemeToggle /></li>
 			</ul>
 		</nav>
 	</div>
@@ -73,6 +75,11 @@ const homeHref = `${import.meta.env.BASE_URL.replace(/\/$/, '')}/`;
 		margin: 0;
 		padding: 0;
 		list-style: none;
+	}
+	/* The theme switch is a control, not a page: set it apart from the links with a hairline. */
+	.toggle {
+		padding-left: 1.4rem;
+		border-left: 1px solid var(--rule);
 	}
 	@media (max-width: 26rem) {
 		ul {

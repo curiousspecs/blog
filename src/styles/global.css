@@ -1,21 +1,22 @@
 /*
   Curious Spectacles — global styles.
   Editorial reading design: Newsreader for reading, Atkinson Hyperlegible for interface text.
-  Colours are tokens; dark mode follows the reader's system setting.
+  Colours are tokens. Dark is the default; a reader who picks Light gets data-theme="light" on <html>
+  (see ThemeToggle.astro and the inline script in BaseHead.astro).
 */
 
 :root {
-	--paper: #f3ecdc;
-	--surface: #e8dec8;
-	--ink: #111b31;
-	--muted: #5d5442;
-	--rule: #d6c9ad;
-	--accent: #a83f16;
-	--accent-strong: #8a3010;
-	--focus: #1f5fbf;
-	/* The rare second accent (text selection, <mark>); a fill in light mode, with on-glow text on it. */
+	--paper: #0d1526;
+	--surface: #152038;
+	--ink: #ece3cf;
+	--muted: #b1a68c;
+	--rule: #27324b;
+	--accent: #f2925a;
+	--accent-strong: #ffb68c;
+	--focus: #8ab4ff;
+	/* The rare second accent (text selection, <mark>), with on-glow text on it. */
 	--glow: #b9f07e;
-	--on-glow: #111b31;
+	--on-glow: #0d1526;
 
 	--font-read: var(--font-newsreader), Georgia, serif;
 	--font-ui: var(--font-atkinson), system-ui, sans-serif;
@@ -27,22 +28,21 @@
 	--wide: 62rem;
 	--gutter: clamp(1rem, 4vw, 2rem);
 
-	color-scheme: light dark;
+	color-scheme: dark;
 }
 
-@media (prefers-color-scheme: dark) {
-	:root {
-		--paper: #0d1526;
-		--surface: #152038;
-		--ink: #ece3cf;
-		--muted: #b1a68c;
-		--rule: #27324b;
-		--accent: #f2925a;
-		--accent-strong: #ffb68c;
-		--focus: #8ab4ff;
-		--glow: #b9f07e;
-		--on-glow: #0d1526;
-	}
+:root[data-theme='light'] {
+	--paper: #f3ecdc;
+	--surface: #e8dec8;
+	--ink: #111b31;
+	--muted: #5d5442;
+	--rule: #d6c9ad;
+	--accent: #a83f16;
+	--accent-strong: #8a3010;
+	--focus: #1f5fbf;
+	--glow: #b9f07e;
+	--on-glow: #111b31;
+	color-scheme: light;
 }
 
 *,
