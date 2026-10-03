@@ -13,6 +13,16 @@ export default defineConfig({
 	redirects: {
 		// Destinations are not base-prefixed by Astro, so include /blog here.
 		'/cv': '/blog/resume/',
+		// Narrative Instant posts were briefly published under dated file names.
+		'/posts/2014-08-05-fertile-crescent': '/blog/posts/fertile-crescent/',
+		'/posts/2014-08-07-idea-cistern': '/blog/posts/idea-cistern/',
+		'/posts/2014-08-12-a-room-of-your-own': '/blog/posts/a-room-of-your-own/',
+		'/posts/2014-08-14-more-on-setting-your-writing': '/blog/posts/more-on-setting-your-writing/',
+		'/posts/2014-08-17-ideation-to-beat-outline-treatment': '/blog/posts/ideation-to-beat-outline-treatment/',
+		'/posts/2015-04-17-rich-man-venus-and-mars-mike-roos': '/blog/posts/rich-man-venus-and-mars-mike-roos/',
+		'/posts/2015-04-17-ship-of-fools-mike-roos': '/blog/posts/ship-of-fools-mike-roos/',
+		'/posts/2015-04-18-teed-your-love-fake-blood-remix': '/blog/posts/teed-your-love-fake-blood-remix/',
+		'/posts/2015-07-20-psychotopography-triptych-1': '/blog/posts/psychotopography-triptych-1/',
 	},
 	fonts: [
 		{
