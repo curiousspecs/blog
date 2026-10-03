@@ -182,6 +182,6 @@ it is a loose, loose contemporary retelling of the jataka tale of the man who sa
 
 and that's the full entry on the note that's been brewing for *participant observer*. if you're following my reading suggestions as you're working through this blog/workshop/extracurricular teaching tool, then keep working on tierno, and brande if you haven't finished her up yet, either. this time around, add to your reading list this link to a free online copy of this brief, classic essay on generating creative ideas:
 
-[A Technique for Getting Ideas by James Wood Young,](http://www.slideshare.net/MJLiggan/a-technique-for-getting-ideas-james-wood-young)
+[A Technique for Getting Ideas by James Wood Young,](https://www.slideshare.net/slideshow/a-technique-for-getting-ideas-james-wood-young/15508388)
 
 (this reading was suggested to me a couple of years ago by a good friend and former colleague, andrea rahtz, whom i thank dearly for turning me on to it.)
