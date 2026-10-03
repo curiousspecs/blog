@@ -41,8 +41,16 @@ const socialImageURL = socialImage ? new URL(socialImage.src, Astro.site) : unde
 	href={new URL(`${base}/rss.xml`, Astro.site)}
 />
 <meta name="generator" content={Astro.generator} />
-<meta name="theme-color" content="#f3ecdc" media="(prefers-color-scheme: light)" />
-<meta name="theme-color" content="#0d1526" media="(prefers-color-scheme: dark)" />
+<meta name="theme-color" content="#0d1526" />
+<!-- Dark is the default. Restore a reader's saved Light choice before the page draws, so there is no flash. -->
+<script is:inline>
+	try {
+		if (localStorage.getItem('theme') === 'light') {
+			document.documentElement.dataset.theme = 'light';
+			document.querySelector('meta[name="theme-color"]').content = '#f3ecdc';
+		}
+	} catch (e) {}
+</script>
 
 <Font cssVariable="--font-newsreader" preload={[{ style: 'normal' }]} />
 <Font cssVariable="--font-atkinson" />
