@@ -44,6 +44,7 @@ the site and returns 404 on GitHub Pages, even though it may work in `astro dev`
   tags: ["film", "lacan"]   # optional; not displayed yet
   kind: "essay"             # optional: essay | publication | event | link | note
   wordpressUrl: "https://mattbennettucba.wordpress.com/…"   # only on posts migrated from WordPress
+  archive: true             # optional; marks an older post that has no wordpressUrl as archive
   ---
   ```
   Posts are served at `/blog/posts/<file-name>/`; the archive is `/blog/posts/`.
@@ -59,10 +60,11 @@ the site and returns 404 on GitHub Pages, even though it may work in `astro dev`
 - **Publications** are data, not prose: one entry per publication in `src/data/publications.json` (title,
   venue, details, year, optional link, image and related post slug), rendered at `/blog/publications/`.
   Mark italics inside a title with `*asterisks*`.
-- **Migrated posts are the archive:** the 2015–2018 posts came from the WordPress export; their images are
-  in `src/assets/wordpress/YYYY/MM/`. Any post with `wordpressUrl` is treated as archive: it is listed under
-  "Archive" after current posts, labelled on its page, and shown on the home page only as an essay or
-  publication. New posts have no `wordpressUrl`.
+- **Older posts are the archive:** the 2015–2018 posts came from the WordPress export; their images are
+  in `src/assets/wordpress/YYYY/MM/`. Any post with `wordpressUrl` or `archive: true` is treated as archive
+  (`src/lib/isArchive.ts`): it is listed under "Archive" after current posts, labelled on its page, and shown
+  on the home page only as an essay or publication. Use `archive: true` for an older post that never had a
+  WordPress address. New posts have neither field.
 
 ## Design
 

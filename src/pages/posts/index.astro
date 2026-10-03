@@ -3,6 +3,7 @@ import { getCollection } from 'astro:content';
 import PostList from '../../components/PostList.astro';
 import { SITE_DESCRIPTION } from '../../consts';
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import { isArchive } from '../../lib/isArchive';
 
 const posts = (await getCollection('blog')).sort(
 	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
@@ -16,9 +17,9 @@ const groupByYear = (list: Post[]) =>
 		posts: list.filter((p) => p.data.pubDate.getUTCFullYear() === year),
 	}));
 
-// Posts migrated from WordPress are the archive, listed after current posts.
-const current = groupByYear(posts.filter((p) => !p.data.wordpressUrl));
-const archivePosts = posts.filter((p) => p.data.wordpressUrl);
+// Older posts are the archive (see src/lib/isArchive.ts), listed after current posts.
+const current = groupByYear(posts.filter((p) => !isArchive(p.data)));
+const archivePosts = posts.filter((p) => isArchive(p.data));
 const archive = groupByYear(archivePosts);
 const archiveYears =
 	archive.length > 0 ? `${archive.at(-1)!.year}–${archive[0].year}` : '';
@@ -46,9 +47,6 @@ const archiveYears =
 				<section class="archive" aria-labelledby="archive">
 					<header class="archive-head">
 						<h2 id="archive">Archive, {archiveYears}</h2>
-						<p class="meta">
-							{archivePosts.length} posts from the original blog
-						</p>
 					</header>
 					{archive.map(({ year, posts }) => (
 						<section class="year" aria-labelledby={`y${year}`}>
@@ -83,11 +81,8 @@ const archiveYears =
 		border-bottom: 1px solid var(--rule);
 	}
 	.archive-head h2 {
-		margin: 0 0 0.3rem;
-		font-size: 1.6rem;
-	}
-	.archive-head .meta {
 		margin: 0;
+		font-size: 1.6rem;
 	}
 	.year-label {
 		margin: 0;

@@ -5,18 +5,19 @@ import { Image } from 'astro:assets';
 import type { CollectionEntry } from 'astro:content';
 import FormattedDate from '../components/FormattedDate.astro';
 import BaseLayout from './BaseLayout.astro';
+import { isArchive } from '../lib/isArchive';
 
 type Neighbour = { title: string; href: string } | undefined;
 type Props = CollectionEntry<'blog'>['data'] & { prev?: Neighbour; next?: Neighbour };
 
-const { title, description, pubDate, updatedDate, heroImage, wordpressUrl, prev, next } = Astro.props;
+const { title, description, pubDate, updatedDate, heroImage, prev, next } = Astro.props;
 ---
 
 <BaseLayout title={title} description={description} image={heroImage}>
 	<article>
 		<header class="measure post-head">
 			<p class="meta">
-				{wordpressUrl && <span class="ui archive-label">Archive</span>}
+				{isArchive(Astro.props) && <span class="ui archive-label">Archive</span>}
 				<FormattedDate date={pubDate} />
 				{
 					updatedDate && (
