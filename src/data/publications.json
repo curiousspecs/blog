@@ -6,7 +6,7 @@
 		"venue": "The International Journal of Literary Humanities",
 		"details": "15, no. 1 (2017): 9-14",
 		"year": 2017,
-		"url": "http://ijhl.cgpublisher.com/product/pub.246/prod.126",
+		"url": "https://doi.org/10.18848/2327-7912/CGP/v15i01/9-14",
 		"image": "../assets/wordpress/2017/03/bigclock.jpg",
 		"post": "new-publication-in-the-international-journal-of-the-literary-humanities-2"
 	},
@@ -17,7 +17,7 @@
 		"venue": "The International Journal of Literary Humanities",
 		"details": "14, no. 4 (2016): 55-63",
 		"year": 2016,
-		"url": "https://cgscholar.com/bookstore/works/totem-and-tableaux",
+		"url": "https://doi.org/10.18848/2327-7912/CGP/v14i04/55-63",
 		"image": "../assets/wordpress/2017/01/f-05095_1411.jpg",
 		"post": "new-publication-in-the-international-journal-of-the-literary-humanities"
 	},
@@ -28,7 +28,7 @@
 		"venue": "PsyArt Journal",
 		"details": "20 (February 18, 2016): 92-103",
 		"year": 2016,
-		"url": "http://journal.psyart.org/article/sookie-and-symptom-vampire-and-void-irruption-of-the-real-in-true-blood/",
+		"url": "https://psyart.org/sookie-and-symptom-vampire-and-void-irruption-of-the-real-in-true-blood/",
 		"image": "../assets/wordpress/2016/04/true-blood1.jpg",
 		"post": "new-publication-in-psyart-journal"
 	},
@@ -38,8 +38,7 @@
 		"title": "Catalogue essay for \"Ship of Fools\" and \"Rich Man: Venus and Mars\", two music videos in collaboration with Mike Roos",
 		"venue": "Gaps + Overlaps: Collaborative Works by UCBA Faculty",
 		"details": "UCBA Art Gallery, Blue Ash, OH (2015)",
-		"year": 2015,
-		"url": "http://www.ucblueash.edu/about/community/art-gallery/past-exhibits/gaps-n-overlaps/catalogue.html"
+		"year": 2015
 	},
 	{
 		"id": "the-pomegranate",
@@ -48,7 +47,7 @@
 		"venue": "International Journal of Humanities and Social Sciences",
 		"details": "1, no. 19 (December 2011): 52-59",
 		"year": 2011,
-		"url": "http://www.ijhssnet.com/journals/Vol_1_No_19_December_2011/7.pdf"
+		"url": "https://ijhss.thebrpi.org/journals/Vol_1_No_19_December_2011/7.pdf"
 	},
 	{
 		"id": "good-woman-or-evil-woman",
@@ -57,7 +56,7 @@
 		"venue": "International Journal of the Humanities",
 		"details": "8, no. 9 (January 2011): 145-154",
 		"year": 2011,
-		"url": "http://ijh.cgpublisher.com/product/pub.26/prod.1921"
+		"url": "https://doi.org/10.18848/1447-9508/CGP/v08i09/43013"
 	},
 	{
 		"id": "eikoh-hosoe",

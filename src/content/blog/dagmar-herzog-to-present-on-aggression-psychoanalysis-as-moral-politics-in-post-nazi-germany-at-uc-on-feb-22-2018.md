@@ -12,8 +12,6 @@ wordpressUrl: "https://mattbennettucba.wordpress.com/2018/02/04/dagmar-herzog-to
 
 Her third speaking engagement is a public lecture: <strong>"On Aggression: Psychoanalysis as Moral Politics in Post-Nazi Germany,"</strong> in Room 350, Dyer Hall, on <strong>Thursday, February 22,</strong> from **4:00-5:30 p.m.** This lecture is drawn from a chapter of *Cold War Freud*.
 
-If you plan to attend, please RSVP to Dr. Ethan Katz, Assistant Professor of History, via email at [katzen@ucmail.uc.edu](mailto:katzen@ucmail.uc.edu).
-
 ![Photo of Dagmar Herzog, smiling at a lectern.](../../assets/wordpress/2018/02/dagmarherzog-e1517745581889.jpg)
 
 **Dagmar Herzog** is Distinguished Professor of History and Daniel Rose Faculty Scholar at the Graduate Center, City University of New York. She conducts transnational and comparative research on how religion and secularization have affected social and political developments in modern Europe. An expert on the histories of Nazism and the Holocaust and their aftermath, she gives particular attention in her research to methodological innovations in critical source analysis and in gender and sexuality studies.
