@@ -24,6 +24,8 @@ const blog = defineCollection({
 			kind: z.enum(['essay', 'publication', 'event', 'link', 'note']).optional(),
 			// The post's address on the old WordPress.com site, kept for redirects.
 			wordpressUrl: z.url().optional(),
+			// Marks an older post as archive when it has no wordpressUrl (see src/lib/isArchive.ts).
+			archive: z.boolean().optional(),
 		}),
 });
 

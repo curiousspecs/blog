@@ -12,6 +12,4 @@ The Cincinnati Psychoanalytic Institute will hold its annual discussion and scre
 
 Discussion of the film from a psychoanalytic perspective will be facilitated by Peter Kotcher, M.D. and James Thomas, M.D. The screening will take place in the [Frederic Kapp Memorial Library at CPI, 3001 Highland Avenue, Cincinnati, OH 45219.](https://goo.gl/maps/puzcPJTeQ4u) The cost is $12.
 
-[Click here to register for this event.](https://cpi.memberclicks.net/index.php?option=com_mcform&view=ngforms&id=36349)
-
 ![Flyer for the Cincinnati Psychoanalytic Institute's Groundhog Day movie and discussion with Peter Kotcher and James Thomas, Friday 2 February 2018, 6:30 to 9 pm, $12.](../../assets/wordpress/2018/01/groundhog-day-2018.jpg)

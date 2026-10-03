@@ -11,7 +11,7 @@ wordpressUrl: "https://mattbennettucba.wordpress.com/2016/04/09/new-publication-
 
 ### Sookie and Symptom, Vampire and Void: Irruption of the Real in True Blood
 
-February 18, 2016 · [Volume 20 (2016)](http://journal.psyart.org/article_category/volume20/)
+February 18, 2016 · [Volume 20 (2016)](https://psyart.org/category/volume-20/)
 
 #### Abstract
 
@@ -19,4 +19,4 @@ Sookie Stackhouse, the protagonist of HBO’s True Blood, is a telepath who has 
 
 View the full article here:
 
-[http://journal.psyart.org/article/sookie-and-symptom-vampire-and-void-irruption-of-the-real-in-true-blood/](http://journal.psyart.org/article/sookie-and-symptom-vampire-and-void-irruption-of-the-real-in-true-blood/)
+[https://psyart.org/sookie-and-symptom-vampire-and-void-irruption-of-the-real-in-true-blood/](https://psyart.org/sookie-and-symptom-vampire-and-void-irruption-of-the-real-in-true-blood/)
