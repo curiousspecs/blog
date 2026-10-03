@@ -45,6 +45,7 @@ the site and returns 404 on GitHub Pages, even though it may work in `astro dev`
   kind: "essay"             # optional: essay | publication | event | link | note
   wordpressUrl: "https://mattbennettucba.wordpress.com/…"   # only on posts migrated from WordPress
   archive: true             # optional; marks an older post that has no wordpressUrl as archive
+  draft: true               # optional; keeps the post in the repository but off the site, lists and RSS
   ---
   ```
   Posts are served at `/blog/posts/<file-name>/`; the archive is `/blog/posts/`.
