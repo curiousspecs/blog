@@ -80,6 +80,14 @@ const archiveYears =
 		border-top: 2px solid var(--ink);
 		border-bottom: 1px solid var(--rule);
 	}
+	/* With no current posts the archive follows the page head directly; its 2px rule would double the head's. */
+	.page-head + .archive {
+		margin-top: 0;
+	}
+	.page-head + .archive .archive-head {
+		padding-top: 0.75rem;
+		border-top: 0;
+	}
 	.archive-head h2 {
 		margin: 0;
 		font-size: 1.6rem;
