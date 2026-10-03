@@ -4,6 +4,8 @@ description: "as much detail as is necessary and relevant to the story."
 pubDate: 2014-08-14
 kind: "essay"
 archive: true
+series: "narrative instant"
+seriesOrder: 4
 ---
 
 setting is not just about place, although that's certainly important to it. setting, as it's translated and manipulated into screen space, helps your viewer to construct a mental map that they will use to make spatial sense of the film. however, setting is important in other ways, too. setting conveys mood, partly as a result of the selection of place, but also in terms of that place's ambiance. as i mentioned last week, the choice of setting can work with the characters you place in that setting or against them. that matching of setting and characters, their speech and actions, creates a mood and a particular modal treatment of the material of the story. the relation between character and setting can create comedy, can frighten, can create suspense, or sadness.

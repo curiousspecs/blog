@@ -4,6 +4,8 @@ description: "make capturing your ideas when they happen a habit."
 pubDate: 2014-08-07
 kind: "essay"
 archive: true
+series: "narrative instant"
+seriesOrder: 2
 ---
 
 you never know when inspiration will come to you and you need to be able to quickly take some notes in order to, later, develop the idea, file it away, or work it into something you're currently producing. some people can manage this by juggling little, inconspicuous **idea notebooks.**

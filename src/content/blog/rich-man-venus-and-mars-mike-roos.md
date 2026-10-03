@@ -6,7 +6,7 @@ kind: "note"
 archive: true
 ---
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/eeDc0omFTjw" title="YouTube video" allow="encrypted-media; picture-in-picture" allowfullscreen="" loading="lazy"></iframe>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/eeDc0omFTjw" title="YouTube video: Rich Man (Venus and Mars) - Mike Roos" allow="encrypted-media; picture-in-picture" allowfullscreen="" loading="lazy"></iframe>
 
 Music and lyrics: Mike Roos\
 Video design and editing: Matt Bennett and Mike Roos

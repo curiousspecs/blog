@@ -4,6 +4,8 @@ description: "nothing is wasted. nothing."
 pubDate: 2014-08-22
 kind: "essay"
 archive: true
+series: "narrative instant"
+seriesOrder: 6
 ---
 
 

@@ -4,6 +4,8 @@ description: "you must have a writing space of your own. or, preferably, several
 pubDate: 2014-08-12
 kind: "essay"
 archive: true
+series: "narrative instant"
+seriesOrder: 3
 ---
 
 ![A laptop open on a cream leather recliner at night](../../assets/narrative-instant/office-recliner.jpg)

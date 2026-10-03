@@ -4,11 +4,43 @@ import mdx from '@astrojs/mdx';
 import sitemap from '@astrojs/sitemap';
 import { defineConfig, fontProviders } from 'astro/config';
 
+// A post's first body image is often the largest thing on screen, so it loads at once rather than
+// lazily, unless the post has a hero image (which loads first). Runs before Astro's own image step,
+// which passes these attributes on to the optimized <img>.
+function firstImageEager() {
+	const plugin = {
+		name: 'first-image-eager',
+		element: {
+			filter: ['img'],
+			/** @param {any} node @param {any} ctx */
+			visit(node, ctx) {
+				const astro = ctx.data.astro;
+				if (!astro || astro.firstImageSeen) return;
+				astro.firstImageSeen = true;
+				if (astro.frontmatter?.heroImage) return;
+				ctx.setProperty(node, 'loading', 'eager');
+				ctx.setProperty(node, 'fetchpriority', 'high');
+			},
+		},
+	};
+	return {
+		name: 'first-image-eager',
+		hooks: {
+			/** @param {any} options */
+			'astro:config:setup': ({ config }) => {
+				config.markdown.processor.options.hastPlugins.push(plugin);
+			},
+		},
+	};
+}
+
 // https://astro.build/config
 export default defineConfig({
 	site: 'https://curiousspecs.github.io',
 	base: '/blog',
-	integrations: [mdx(), sitemap()],
+	integrations: [mdx(), sitemap(), firstImageEager()],
+	// The stylesheet is small (about 6 KB); inlining it saves a render-blocking request.
+	build: { inlineStylesheets: 'always' },
 	// The Résumé page was the CV page; keep its old address working.
 	redirects: {
 		// Destinations are not base-prefixed by Astro, so include /blog here.

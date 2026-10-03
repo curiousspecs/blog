@@ -6,7 +6,7 @@ kind: "note"
 archive: true
 ---
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/3jpreoZTEII" title="YouTube video" allow="encrypted-media; picture-in-picture" allowfullscreen="" loading="lazy"></iframe>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/3jpreoZTEII" title="YouTube video: Totally Enormous Extinct Dinosaurs - Your Love (Fake Blood Remix)" allow="encrypted-media; picture-in-picture" allowfullscreen="" loading="lazy"></iframe>
 
 This is my contribution to a collaborative video project Betsy Fischer and I have been engaging in, 312: a Trilogy of Unique Détournements Doubles.
 

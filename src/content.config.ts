@@ -28,6 +28,9 @@ const blog = defineCollection({
 			archive: z.boolean().optional(),
 			// A draft stays in the repository but is left out of every page, list and the RSS feed.
 			draft: z.boolean().optional(),
+			// Posts in a series share a series name (see SERIES in src/consts.ts) and are numbered from 1.
+			series: z.string().optional(),
+			seriesOrder: z.number().int().positive().optional(),
 		}),
 });
 

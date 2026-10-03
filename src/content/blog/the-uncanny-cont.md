@@ -8,7 +8,7 @@ kind: "essay"
 wordpressUrl: "https://mattbennettucba.wordpress.com/2015/07/18/the-uncanny-cont/"
 ---
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/OaRx7iR9kXg" title="YouTube video" allow="encrypted-media; picture-in-picture" allowfullscreen="" loading="lazy"></iframe>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/OaRx7iR9kXg" title="YouTube video: The Uncanny -cont.-" allow="encrypted-media; picture-in-picture" allowfullscreen="" loading="lazy"></iframe>
 
 ***It Follows***
 

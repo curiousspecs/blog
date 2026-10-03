@@ -1,6 +1,8 @@
 ---
 import { type CollectionEntry, getCollection, render } from 'astro:content';
+import { SERIES } from '../../consts';
 import BlogPost from '../../layouts/BlogPost.astro';
+import { postImage } from '../../lib/postImage';
 
 export async function getStaticPaths() {
 	const base = import.meta.env.BASE_URL.replace(/\/$/, '');
@@ -10,16 +12,35 @@ export async function getStaticPaths() {
 	);
 	const link = (post?: CollectionEntry<'blog'>) =>
 		post && { title: post.data.title, href: `${base}/posts/${post.id}/` };
+	// A post in a series also links to the parts before and after it, in seriesOrder.
+	const seriesOf = (post: CollectionEntry<'blog'>) => {
+		const { series: key, seriesOrder } = post.data;
+		if (!key) return undefined;
+		const parts = posts
+			.filter((p) => p.data.series === key)
+			.sort((a, b) => (a.data.seriesOrder ?? 0) - (b.data.seriesOrder ?? 0));
+		if (parts.some((p) => p.data.seriesOrder === undefined)) {
+			throw new Error(`Every post in the series "${key}" needs a seriesOrder`);
+		}
+		const i = parts.indexOf(post);
+		return {
+			name: SERIES[key] ?? key,
+			part: seriesOrder!,
+			total: parts.length,
+			prev: link(parts[i - 1]),
+			next: link(parts[i + 1]),
+		};
+	};
 	return posts.map((post, i) => ({
 		params: { slug: post.id },
-		props: { post, prev: link(posts[i - 1]), next: link(posts[i + 1]) },
+		props: { post, prev: link(posts[i - 1]), next: link(posts[i + 1]), series: seriesOf(post) },
 	}));
 }
 
-const { post, prev, next } = Astro.props;
+const { post, prev, next, series } = Astro.props;
 const { Content } = await render(post);
 ---
 
-<BlogPost {...post.data} prev={prev} next={next}>
+<BlogPost {...post.data} prev={prev} next={next} seriesNav={series} socialImage={postImage(post)}>
 	<Content />
 </BlogPost>
