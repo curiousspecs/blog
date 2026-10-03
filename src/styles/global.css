@@ -5,14 +5,17 @@
 */
 
 :root {
-	--paper: #faf7f2;
-	--surface: #f1ebe1;
-	--ink: #1c1a17;
-	--muted: #5c564d;
-	--rule: #e2d9cb;
-	--accent: #9e2a20;
-	--accent-strong: #7a1c14;
+	--paper: #f3ecdc;
+	--surface: #e8dec8;
+	--ink: #111b31;
+	--muted: #5d5442;
+	--rule: #d6c9ad;
+	--accent: #a83f16;
+	--accent-strong: #8a3010;
 	--focus: #1f5fbf;
+	/* The rare second accent (text selection, <mark>); a fill in light mode, with on-glow text on it. */
+	--glow: #b9f07e;
+	--on-glow: #111b31;
 
 	--font-read: var(--font-newsreader), Georgia, serif;
 	--font-ui: var(--font-atkinson), system-ui, sans-serif;
@@ -29,14 +32,16 @@
 
 @media (prefers-color-scheme: dark) {
 	:root {
-		--paper: #14120f;
-		--surface: #1e1b17;
-		--ink: #ebe5da;
-		--muted: #a79f92;
-		--rule: #34302a;
-		--accent: #f08c7c;
-		--accent-strong: #ffb2a5;
+		--paper: #0d1526;
+		--surface: #152038;
+		--ink: #ece3cf;
+		--muted: #b1a68c;
+		--rule: #27324b;
+		--accent: #f2925a;
+		--accent-strong: #ffb68c;
 		--focus: #8ab4ff;
+		--glow: #b9f07e;
+		--on-glow: #0d1526;
 	}
 }
 
@@ -147,6 +152,17 @@ p {
 	outline: 3px solid var(--focus);
 	outline-offset: 3px;
 	border-radius: 2px;
+}
+
+::selection {
+	background: var(--glow);
+	color: var(--on-glow);
+}
+
+mark {
+	background: var(--glow);
+	color: var(--on-glow);
+	padding: 0 0.15em;
 }
 
 strong,
