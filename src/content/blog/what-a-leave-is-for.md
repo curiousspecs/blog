@@ -4,6 +4,7 @@ description: "Why I'm building a course on generative AI in creative work that t
 pubDate: 2026-09-25
 tags: ["leave", "teaching", "AI"]
 kind: "essay"
+draft: true
 ---
 
 A month into the fall semester, I haven't taught a class. That is what a research leave looks like from the outside: an absence. From the inside it is a deadline. I'm building a course called *Exploring Generative AI in Creative Workflows*. It is first taught on 11 January, its description is now in the course catalogue, and students are about to decide from one paragraph whether to take it.

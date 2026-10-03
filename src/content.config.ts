@@ -26,6 +26,8 @@ const blog = defineCollection({
 			wordpressUrl: z.url().optional(),
 			// Marks an older post as archive when it has no wordpressUrl (see src/lib/isArchive.ts).
 			archive: z.boolean().optional(),
+			// A draft stays in the repository but is left out of every page, list and the RSS feed.
+			draft: z.boolean().optional(),
 		}),
 });
 

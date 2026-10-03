@@ -3,7 +3,7 @@ import rss from '@astrojs/rss';
 import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 
 export async function GET(context) {
-	const posts = await getCollection('blog');
+	const posts = await getCollection('blog', ({ data }) => !data.draft);
 	// `context.site` has no base path ('/blog'), so build every URL from site + base.
 	const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 	return rss({
