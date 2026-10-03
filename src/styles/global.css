@@ -49,6 +49,8 @@
 html {
 	-webkit-text-size-adjust: 100%;
 	text-size-adjust: 100%;
+	/* Room for the sticky footer, so focused elements and #anchors don't land behind it. */
+	scroll-padding-bottom: 5rem;
 }
 
 body {
