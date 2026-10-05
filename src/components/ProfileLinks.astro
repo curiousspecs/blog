@@ -1,0 +1,22 @@
+---
+// One plain line linking to Matt's scholarly profiles (About and Publications pages).
+import { PROFILES } from '../consts';
+
+const profiles = [
+	{ label: 'ORCID', href: PROFILES.orcid },
+	{ label: 'Academia.edu', href: PROFILES.academia },
+	{ label: 'Google Scholar', href: PROFILES.scholar },
+	{ label: 'UC research profile', href: PROFILES.directory },
+];
+---
+
+<p class="profiles">
+	Profiles: {profiles.map((p, i) => <>{i > 0 && ' · '}<a href={p.href} rel="me">{p.label}</a></>)}
+</p>
+<style>
+	.profiles {
+		font-family: var(--font-ui);
+		font-size: 0.95rem;
+		color: var(--muted);
+	}
+</style>
