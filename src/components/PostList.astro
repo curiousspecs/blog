@@ -45,7 +45,7 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 		list-style: none;
 	}
 	li {
-		padding-block: 1.4rem;
+		padding-block: 1.25rem;
 		border-top: 1px solid var(--rule);
 	}
 	li:first-child {
@@ -53,20 +53,22 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 		padding-top: 0;
 	}
 	.meta {
-		margin: 0 0 0.3rem;
+		margin: 0 0 0.4rem;
 	}
 	.kind {
-		margin-left: 0.6rem;
-		padding-left: 0.6rem;
+		margin-left: 0.8rem;
+		padding-left: 0.8rem;
 		border-left: 1px solid var(--rule);
+		font-family: var(--font-ui);
 		text-transform: uppercase;
-		letter-spacing: 0.06em;
-		font-size: 0.75rem;
+		letter-spacing: 0.22em;
+		font-size: 0.7rem;
 	}
 	.title {
 		margin: 0;
-		font-size: 1.35rem;
-		line-height: 1.25;
+		font-size: 1.7rem;
+		line-height: 1.1;
+		font-style: normal;
 	}
 	.title a {
 		color: var(--ink);

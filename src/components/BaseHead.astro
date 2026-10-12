@@ -62,7 +62,9 @@ const socialImageURL = new URL(socialImage.src, Astro.site);
 </script>
 
 <Font cssVariable="--font-newsreader" preload={[{ style: 'normal' }]} />
-<Font cssVariable="--font-atkinson" />
+<Font cssVariable="--font-instrument" preload={[{ style: 'normal' }]} />
+<Font cssVariable="--font-worksans" />
+<Font cssVariable="--font-plexmono" />
 
 <!-- Canonical URL -->
 {isNotFound ? <meta name="robots" content="noindex" /> : <link rel="canonical" href={canonicalURL} />}

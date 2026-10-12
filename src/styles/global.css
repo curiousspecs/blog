@@ -1,6 +1,8 @@
 /*
   Curious Spectacles — global styles.
-  Editorial reading design: Newsreader for reading, Atkinson Hyperlegible for interface text.
+  The Curious Spectacles design system ("plate" revision, 2026-10-11): Instrument Serif for the name, titles
+  and headings; Newsreader for reading; Work Sans spaced capitals for the interface; IBM Plex Mono for dates
+  and details; navy hairlines for structure.
   Colours are tokens. Dark is the default; a reader who picks Light gets data-theme="light" on <html>
   (see ThemeToggle.astro and the inline script in BaseHead.astro).
 */
@@ -18,15 +20,17 @@
 	--glow: #b9f07e;
 	--on-glow: #0d1526;
 
+	--font-display: var(--font-instrument), Georgia, serif;
 	--font-read: var(--font-newsreader), Georgia, serif;
-	--font-ui: var(--font-atkinson), system-ui, sans-serif;
+	--font-ui: var(--font-worksans), Verdana, sans-serif;
+	--font-mono: var(--font-plexmono), 'Courier New', monospace;
 
 	--measure: 40rem;
 	/* Page title size, shared so spacing can be measured from it (see .page-head). */
-	--h1-size: clamp(2.1rem, 1.4rem + 3vw, 3.4rem);
+	--h1-size: clamp(2.6rem, 1.7rem + 3.6vw, 4.4rem);
 	--page-head-pad: 1.5rem;
 	--wide: 62rem;
-	--gutter: clamp(1rem, 4vw, 2rem);
+	--gutter: clamp(1.25rem, 6vw, 3rem);
 
 	color-scheme: dark;
 }
@@ -103,27 +107,28 @@ h3,
 h4,
 h5,
 h6 {
-	font-family: var(--font-read);
-	font-weight: 600;
-	line-height: 1.15;
+	/* Instrument Serif has one weight: hierarchy comes from size and italic, never bold. */
+	font-family: var(--font-display);
+	font-weight: 400;
+	line-height: 1.05;
 	letter-spacing: -0.01em;
-	margin: 1.6em 0 0.5em;
+	margin: 1.6em 0 0.45em;
 	text-wrap: balance;
 }
 
 h1 {
 	font-size: var(--h1-size);
-	font-weight: 500;
-	letter-spacing: -0.02em;
-	line-height: 1.05;
+	line-height: 1;
 }
 
 h2 {
-	font-size: 1.6em;
+	font-size: 1.8em;
 }
 
 h3 {
-	font-size: 1.3em;
+	font-size: 1.4em;
+	font-style: italic;
+	line-height: 1.1;
 }
 
 h4,
@@ -139,13 +144,13 @@ p {
 /* Zero-specificity so component styles (scoped with :where) can restyle links. */
 :where(a) {
 	color: var(--accent);
-	text-decoration-thickness: 0.06em;
-	text-underline-offset: 0.18em;
+	text-decoration-thickness: 1px;
+	text-underline-offset: 0.2em;
 }
 
 :where(a):hover {
 	color: var(--accent-strong);
-	text-decoration-thickness: 0.12em;
+	text-decoration-thickness: 2px;
 }
 
 :focus-visible {
@@ -189,7 +194,7 @@ img {
 blockquote {
 	margin: 1.6em 0;
 	padding: 0.1em 0 0.1em 1.25em;
-	border-left: 3px solid var(--accent);
+	border-left: 1px solid var(--accent);
 	color: var(--muted);
 	font-style: italic;
 }
@@ -200,7 +205,8 @@ blockquote i {
 }
 
 code {
-	font-size: 0.85em;
+	font-family: var(--font-mono);
+	font-size: 0.8em;
 	padding: 0.1em 0.3em;
 	background: var(--surface);
 	border-radius: 3px;
@@ -240,7 +246,7 @@ td {
 	gap: 0.5rem 2rem;
 	padding-bottom: var(--page-head-pad);
 	margin-bottom: 1rem;
-	border-bottom: 2px solid var(--ink);
+	border-bottom: 1px solid var(--ink);
 }
 
 .page-head h1,
@@ -252,13 +258,14 @@ td {
 
 .ui {
 	font-family: var(--font-ui);
-	font-size: 0.8rem;
-	letter-spacing: 0.06em;
+	font-size: 0.75rem;
+	font-weight: 400;
+	letter-spacing: 0.22em;
 	text-transform: uppercase;
 }
 
 .meta {
-	font-family: var(--font-ui);
+	font-family: var(--font-mono);
 	font-size: 0.85rem;
 	color: var(--muted);
 	letter-spacing: 0.02em;

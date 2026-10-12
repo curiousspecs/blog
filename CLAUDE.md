@@ -69,8 +69,9 @@ the site and returns 404 on GitHub Pages, even though it may work in `astro dev`
 
 ## Design
 
-The design is an editorial reading layout: Newsreader (self-hosted, `src/assets/fonts/`) for reading text,
-Atkinson Hyperlegible for interface text, colour tokens in `src/styles/global.css`, dark by default with a Light/Dark toggle in the header
+The design follows the Curious Spectacles design system ("plate" revision, October 2026): Instrument Serif for the
+name, titles and headings, Newsreader for reading text, Work Sans spaced capitals for interface text and IBM Plex
+Mono for dates and details (all self-hosted in `src/assets/fonts/`), navy hairlines for structure, colour tokens in `src/styles/global.css`, dark by default with a Light/Dark toggle in the header
 (`src/components/ThemeToggle.astro`) that remembers the reader's choice, and a spectacles mark in the header and favicon. Every page is built on
 `src/layouts/BaseLayout.astro`. **Design direction is Matt's.** Propose changes with a screenshot or a short
 rationale in the PR; don't restyle the site as a side effect of another task. Keep the site accessible: text
