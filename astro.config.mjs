@@ -34,6 +34,19 @@ function firstImageEager() {
 	};
 }
 
+// The Latin and Latin Extended subsets of a self-hosted face, as Astro font variants.
+const LATIN =
+	'U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD';
+const LATIN_EXT =
+	'U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF';
+/** @param {(subset: string) => string} file @param {{weight: any, style: any}} face */
+function subsets(file, face) {
+	return [
+		{ src: [file('latin')], ...face, display: 'swap', unicodeRange: [LATIN] },
+		{ src: [file('latin-ext')], ...face, display: 'swap', unicodeRange: [LATIN_EXT] },
+	];
+}
+
 // https://astro.build/config
 export default defineConfig({
 	site: 'https://curiousspecs.github.io',
@@ -58,7 +71,7 @@ export default defineConfig({
 	},
 	fonts: [
 		{
-			// Reading face for headings and body text. Variable (weight 200–800, optical size);
+			// Reading face for body text and quotes. Variable (weight 200–800, optical size);
 			// self-hosted, SIL Open Font License (src/assets/fonts/newsreader-OFL.txt).
 			provider: fontProviders.local(),
 			name: 'Newsreader',
@@ -90,27 +103,48 @@ export default defineConfig({
 			},
 		},
 		{
-			// Interface face (navigation, dates, labels).
-
+			// Display face for the site name, titles and headings. One weight, roman and italic;
+			// self-hosted, SIL Open Font License (src/assets/fonts/instrument-serif-OFL.txt).
 			provider: fontProviders.local(),
-			name: 'Atkinson',
-			cssVariable: '--font-atkinson',
-			fallbacks: ['sans-serif'],
+			name: 'Instrument Serif',
+			cssVariable: '--font-instrument',
+			fallbacks: ['Georgia', 'serif'],
 			options: {
-				variants: [
-					{
-						src: ['./src/assets/fonts/atkinson-regular.woff'],
+				variants: ['normal', 'italic'].flatMap((style) =>
+					subsets((subset) => `./src/assets/fonts/instrument-serif-${subset}-400-${style}.woff2`, {
 						weight: 400,
+						style,
+					}),
+				),
+			},
+		},
+		{
+			// Interface face: spaced capitals for navigation and labels. Variable weight;
+			// SIL Open Font License (src/assets/fonts/work-sans-OFL.txt).
+			provider: fontProviders.local(),
+			name: 'Work Sans',
+			cssVariable: '--font-worksans',
+			fallbacks: ['Verdana', 'sans-serif'],
+			options: {
+				variants: subsets((subset) => `./src/assets/fonts/work-sans-${subset}-wght-normal.woff2`, {
+					weight: '100 900',
+					style: 'normal',
+				}),
+			},
+		},
+		{
+			// Record face: dates, counts, details. SIL Open Font License (src/assets/fonts/ibm-plex-mono-OFL.txt).
+			provider: fontProviders.local(),
+			name: 'IBM Plex Mono',
+			cssVariable: '--font-plexmono',
+			fallbacks: ['Courier New', 'monospace'],
+			options: {
+				variants: [400, 500].flatMap((weight) =>
+					subsets((subset) => `./src/assets/fonts/ibm-plex-mono-${subset}-${weight}-normal.woff2`, {
+						weight,
 						style: 'normal',
-						display: 'swap',
-					},
-					{
-						src: ['./src/assets/fonts/atkinson-bold.woff'],
-						weight: 700,
-						style: 'normal',
-						display: 'swap',
-					},
-				],
+					}),
+				),
 			},
 		},
 	],

@@ -10,13 +10,12 @@ const homeHref = `${import.meta.env.BASE_URL.replace(/\/$/, '')}/`;
 <header class="site-header">
 	<div class="wrap bar">
 		<a class="brand" href={homeHref}>
-			<svg class="mark" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
-				<g fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round">
-					<circle cx="18" cy="36" r="12"></circle>
-					<circle cx="46" cy="36" r="12"></circle>
-					<path d="M30 34 q2 -4 4 0"></path>
-					<path d="M6 34 L3 22 M58 34 L61 22"></path>
-				</g>
+			<svg class="mark" viewBox="102 130 289 105" aria-hidden="true" focusable="false">
+				<path
+					fill="currentColor"
+					fill-rule="evenodd"
+					d="M 246.30 142.60 C 240.50 142.30 233.50 143.40 227.50 145.60 C 212.50 136.00 195.00 131.40 176.00 131.40 C 150.00 131.40 124.00 134.60 103.60 140.20 C 103.40 145.00 103.30 150.50 103.30 155.50 C 103.60 158.50 111.80 161.50 112.30 170.00 C 113.00 182.00 117.50 200.00 125.00 212.50 C 134.00 226.00 149.00 232.60 166.00 233.40 C 183.00 234.00 206.00 229.00 218.00 211.00 C 226.00 198.00 233.50 180.00 234.40 166.00 C 236.00 160.50 240.50 157.60 246.30 157.60 C 252.10 157.60 256.60 160.50 258.20 166.00 C 259.10 180.00 266.60 198.00 274.60 211.00 C 286.60 229.00 309.60 234.00 326.60 233.40 C 343.60 232.60 358.60 226.00 367.60 212.50 C 375.10 200.00 379.60 182.00 380.30 170.00 C 380.80 161.50 389.00 158.50 389.30 155.50 C 389.30 150.50 389.20 145.00 389.00 140.20 C 368.60 134.60 342.60 131.40 316.60 131.40 C 297.60 131.40 280.10 136.00 265.10 145.60 C 259.10 143.40 252.10 142.30 246.30 142.60 Z M 173 140.2 C 190 140.4 204 144 213 151 C 220 156.5 222.4 163 222.2 170 C 221.8 186 216 200 207 210 C 198 219.5 185 224.8 171 225.2 C 157 225.4 145 221 137 213 C 129 204.5 125 192 123.3 180 C 122.2 171 122.6 163 125 157.5 C 128.5 149.5 135 145.8 142 143.6 C 152 140.8 163 140 173 140.2 Z M 302.88 181.68 C 297.17 164.40 295.76 147.48 307.98 139.02 C 300.46 148.42 301.87 164.40 304.44 175.85 C 307.53 169.22 314.43 165.24 321.72 165.88 C 339.00 160.17 355.92 158.76 364.38 170.98 C 354.98 163.46 339.00 164.87 327.55 167.44 C 334.18 170.53 338.16 177.43 337.52 184.72 C 343.23 202.00 344.64 218.92 332.42 227.38 C 339.94 217.98 338.53 202.00 335.96 190.55 C 332.87 197.18 325.97 201.16 318.68 200.52 C 301.40 206.23 284.48 207.64 276.02 195.42 C 285.42 202.94 301.40 201.53 312.85 198.96 C 306.22 195.87 302.24 188.97 302.88 181.68 Z"
+				></path>
 			</svg>
 			<span class="name">{SITE_TITLE}</span>
 		</a>
@@ -34,7 +33,7 @@ const homeHref = `${import.meta.env.BASE_URL.replace(/\/$/, '')}/`;
 </header>
 <style>
 	.site-header {
-		border-bottom: 1px solid var(--rule);
+		border-bottom: 1px solid var(--ink);
 	}
 	.bar {
 		display: flex;
@@ -42,7 +41,7 @@ const homeHref = `${import.meta.env.BASE_URL.replace(/\/$/, '')}/`;
 		align-items: center;
 		justify-content: space-between;
 		gap: 0.5rem 1.5rem;
-		padding-block: 1rem;
+		padding-block: 1.1rem;
 	}
 	.brand {
 		display: inline-flex;
@@ -51,17 +50,19 @@ const homeHref = `${import.meta.env.BASE_URL.replace(/\/$/, '')}/`;
 		color: var(--ink);
 		text-decoration: none;
 	}
+	/* The mark is about 2.75 times as wide as it is tall. */
 	.mark {
 		width: 2.1rem;
-		height: 2.1rem;
+		height: auto;
+		aspect-ratio: 289 / 105;
 		color: var(--accent);
 		flex: none;
 	}
 	.name {
-		font-family: var(--font-read);
+		font-family: var(--font-display);
 		font-size: 1.45rem;
 		font-style: italic;
-		font-weight: 500;
+		font-weight: 400;
 		letter-spacing: -0.01em;
 		line-height: 1;
 	}
@@ -71,14 +72,14 @@ const homeHref = `${import.meta.env.BASE_URL.replace(/\/$/, '')}/`;
 	ul {
 		display: flex;
 		flex-wrap: wrap;
-		gap: 0.25rem 1.4rem;
+		gap: 0.25rem 1.6rem;
 		margin: 0;
 		padding: 0;
 		list-style: none;
 	}
 	/* The theme switch is a control, not a page: set it apart from the links with a hairline. */
 	.toggle {
-		padding-left: 1.4rem;
+		padding-left: 1.6rem;
 		border-left: 1px solid var(--rule);
 	}
 	@media (max-width: 26rem) {

@@ -127,7 +127,7 @@ const archiveYears =
 	.intro {
 		padding-bottom: clamp(1.5rem, 4vw, 3rem);
 		margin-bottom: clamp(2rem, 5vw, 3.5rem);
-		border-bottom: 2px solid var(--ink);
+		border-bottom: 1px solid var(--ink);
 	}
 	@media (min-width: 56rem) {
 		.intro {
@@ -155,7 +155,7 @@ const archiveYears =
 	.cards {
 		display: grid;
 		grid-template-columns: repeat(auto-fill, minmax(min(100%, 17rem), 1fr));
-		gap: 2rem 1.75rem;
+		gap: 2.25rem 1.75rem;
 		margin: 0;
 		padding: 0;
 		list-style: none;
@@ -170,33 +170,34 @@ const archiveYears =
 		aspect-ratio: 3 / 2;
 		object-fit: cover;
 		object-position: 50% 25%;
-		margin-bottom: 0.75rem;
+		margin-bottom: 0.85rem;
 		background: var(--surface);
 	}
 	.card .meta {
-		margin: 0 0 0.25rem;
+		margin: 0 0 0.3rem;
 	}
 	.card h3 {
 		margin: 0;
-		font-size: 1.2rem;
-		line-height: 1.25;
+		font-size: 1.5rem;
+		font-style: normal;
+		line-height: 1.1;
 	}
 	.card:hover h3 {
 		color: var(--accent);
 	}
 	.intro h1 {
 		margin: 0 0 0.25rem;
-		font-size: clamp(2.6rem, 1.6rem + 5vw, 5rem);
+		font-size: clamp(3rem, 1.8rem + 5.5vw, 5.5rem);
 		font-style: italic;
-		font-weight: 400;
+		line-height: 0.95;
 	}
 	.tagline {
-		margin: 0 0 1.75rem;
+		margin: 0.75rem 0 1.75rem;
 		font-family: var(--font-ui);
-		font-size: 0.95rem;
-		letter-spacing: 0.06em;
+		font-size: 0.8rem;
+		letter-spacing: 0.22em;
 		text-transform: uppercase;
-		color: var(--accent);
+		color: var(--muted);
 	}
 	.intro-text {
 		max-width: var(--measure);
@@ -238,9 +239,9 @@ const archiveYears =
 	}
 	.lead-text h3 {
 		margin: 0.2em 0 0.4em;
-		font-size: clamp(1.6rem, 1.2rem + 1.6vw, 2.4rem);
-		font-weight: 500;
-		line-height: 1.1;
+		font-size: clamp(2rem, 1.5rem + 2vw, 3rem);
+		font-style: normal;
+		line-height: 1.02;
 	}
 	.lead-card:hover h3 {
 		color: var(--accent);
