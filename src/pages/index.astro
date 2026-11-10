@@ -18,6 +18,8 @@ const current = posts.filter((p) => !isArchive(p.data));
 const archive = posts.filter((p) => isArchive(p.data));
 // The newest current post leads the page; other current posts follow. No current post, no Latest section.
 const lead = current[0];
+// The lead card's picture: the post's hero image, or else its first image (as the archive cards do).
+const leadImage = lead && postImage(lead);
 const recent = current.filter((p) => p !== lead).slice(0, 5);
 // From the archive: the essays and publications, not the event notices or link posts.
 const fromArchive = archive
@@ -57,12 +59,12 @@ const archiveYears =
 				<section class="lead" aria-labelledby="lead-title">
 					<h2 class="ui section-label">Latest</h2>
 					<a
-						class:list={['lead-card', { 'has-image': lead.data.heroImage }]}
+						class:list={['lead-card', { 'has-image': leadImage }]}
 						href={`${base}/posts/${lead.id}/`}
 					>
-						{lead.data.heroImage && (
+						{leadImage && (
 							<Image
-								src={lead.data.heroImage}
+								src={leadImage}
 								alt=""
 								widths={[480, 720, 960]}
 								sizes="(min-width: 48rem) 30rem, 100vw"
