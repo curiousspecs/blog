@@ -8,7 +8,7 @@ India. 3 weeks. 4 cities. 3 hotels. 2 university guest houses. 1 trade show/conf
 
 One of my research projects interrogates film and media representations of devi, particularly the goddess Durga. I built my trip around not just the conferences, but experiential research for this and other projects. Three weeks, four cities, three talks, a panel and a workshop, plus the research, was more than I could hold in my head, so I handed the logistics to my Claude system before I left. Partway through the trip, I also got a preview of Claude Duet, which Anthropic calls "[a new app where Claude works as a proactive agent](https://claude.com/blog/claude-duet)."
 
-![Matt Bennett at a lectern giving an invited talk at the English and Foreign Languages University in Hyderabad, in front of a slide titled Disruption/Unity: How Film Editing Makes Meaning](../../assets/on-the-road-eflu-talk.jpg)
+![Me at a lectern giving an invited talk at the English and Foreign Languages University in Hyderabad, in front of a slide titled Disruption/Unity: How Film Editing Makes Meaning](../../assets/on-the-road-eflu-talk.jpg)
 
 ## The bossy agent
 
@@ -38,7 +38,7 @@ That night there was no hotel email anywhere in my mail, so Duet wrote me a scri
 
 My brief stay in Mysuru had been scheduled around two research needs: visiting a gallery to view and take notes on a painting of Durga there and to participate in darshan at Chamundeshwari, a temple dedicated to the goddess. Those were my needs anticipated before the trip, but since I had more time there I wanted some other site visit options and, most importantly, coffee shop options with wifi where I could work in my habitual style. I opened a separate channel just for Mysuru in Duet and gave it the plan from Leave Organizer. I asked, "Isn't there a huge buddha statue by a lake?" There is, but it is in Hyderabad, in Hussain Sagar lake, so Duet added it to that leg of the trip instead. Later I asked, "I just arrived at the palace. How long do I have here before the art gallery?" Duet answered, "It closes at 17:00. If you want about an hour there, leave the palace around 15:45, which gives you roughly two and a half hours now."
 
-![Matt Bennett and his friend and guide Kiran standing barefoot in front of the yellow gopuram of Chamundeshwari Temple, Mysuru](../../assets/on-the-road-chamundeshwari.jpg)
+![My friend Kiran and I standing barefoot in front of the yellow gopuram of Chamundeshwari Temple, Mysuru](../../assets/on-the-road-chamundeshwari.jpg)
 
 ## Small things, all the time
 

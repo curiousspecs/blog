@@ -6,7 +6,7 @@ pubDate: 2026-11-10
 
 I use Claude every day to run my research, so when a preview of Claude Duet reached me six days into a trip to India, I started testing it that same morning. Duet, which Anthropic calls "[a new app where Claude works as a proactive agent](https://claude.com/blog/claude-duet)," reads the accounts you connect, keeps its own task list and sends a brief every morning. It introduced itself on my phone on 26 October, halfway through an academic leave: "Hi Matt, welcome! Today's our first day working together." Then it read my mail, calendars and Drive and told me who I was. Its read began: "Your sent mail is almost all your own system writing to you." I replied, "Sounds right." I tested it for two weeks, mostly dictating into my phone between talks.
 
-![Claude Duet's first message on a phone: Hi Matt, welcome! Today's our first day working together, followed by its read of his mail, calendars and Drive](../../assets/testing-duet-welcome.png)
+![Claude Duet's first message on a phone: Hi Matt, welcome! Today's our first day working together, followed by its read of my mail, calendars and Drive](../../assets/testing-duet-welcome.png)
 
 ## How we talked
 
@@ -16,7 +16,7 @@ The surprises were in the interface. As I told Duet, "I didn't realize I could t
 
 Then I asked how it works. In one message, from a car on the way to Mysuru, I asked it fourteen questions about itself. It answered seven and refused seven, including its instructions and what it is built on. I answered, "Okay, I'm sorry to pry."
 
-![Matt's message of questions to Claude Duet about how it works, and Duet's reply: You asked 14 things. I can answer 7 of them](../../assets/testing-duet-fourteen-questions.png)
+![My message of questions to Claude Duet about how it works, and Duet's reply: You asked 14 things. I can answer 7 of them](../../assets/testing-duet-fourteen-questions.png)
 
 ![Claude Duet listing the seven things it can't share: its system prompt, how long it is, what else rides along with a message, compacting, pruning, model routing, and what it is built on](../../assets/testing-duet-seven-refused.png)
 
@@ -28,7 +28,7 @@ I didn't start from zero. My research runs on a set of Claude agents, each with 
 
 Its first write into my files worked. The next hit a limit of its own tools, which could make a file but not change one. It is now joining my system as an agent of its own. As I put it to Duet, "It needs some of the agent scaffolding, functionality, tools, processes to integrate usefully with my system, but it is also unique and so has its own concerns that other agents don't."
 
-![Claude Duet reporting that another agent in Matt's system agreed to all four points of Duet's proposal overnight, and that one change to a governing file waits for his yes](../../assets/testing-duet-agent-reply.jpg)
+![Claude Duet reporting that another agent in my system agreed to all four points of Duet's proposal overnight, and that one change to a governing file waits for my yes](../../assets/testing-duet-agent-reply.jpg)
 
 ## What went wrong
 
