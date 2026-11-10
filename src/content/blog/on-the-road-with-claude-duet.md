@@ -22,7 +22,7 @@ I chose to keep the agent out of the group chat. First and foremost, without con
 
 I jokingly refer to the Leave Organizer WhatsApp agent as bossy, but it was only reacting to what the system has already learned about me. Some neurodivergence issues cause me to sometimes forget to eat, to burn out after being around groups of people, to leave for the day without having everything I need with me, to need multiple reminders of the same task, etc. Had the agent not been bossy, not only would important tasks have fallen through the cracks, but also some basic self-care needs. I include this because, if someone who is also neurodivergent reads this and sees how I use it, maybe it will inspire them, too.
 
-Sometimes the bossiness was oddly precise. My first cave visit was Elephanta Island, at the very beginning of my trip (with reminders sent by Leave Organizer to apply mosquito repellent with, what I found to be kind of amusing, the particular kind of disease carried by the daytime mosquitos - Dengue. When I was out in nature in the evening, it told me to apply repellent because mosquitos potentially carrying malaria were out at night.) I was there to photograph and take notes on the Ardhanarishvara Carving.
+Sometimes the bossiness was oddly precise. My first cave visit was Elephanta Island, at the very beginning of my trip (with reminders sent by Leave Organizer to apply mosquito repellent with, what I found to be kind of amusing, the particular kind of disease carried by the daytime mosquitos - Dengue; when I was out in nature in the evening, it told me to apply repellent because mosquitos potentially carrying malaria were out at night). I was there to photograph and take notes on the Ardhanarishvara Carving.
 
 ## Duet, just in time
 
