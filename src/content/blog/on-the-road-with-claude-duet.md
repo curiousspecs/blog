@@ -26,7 +26,7 @@ Sometimes the bossiness was oddly precise. My first cave visit was Elephanta Isl
 
 Once I had been granted preview access to Duet on 26 October, six days after I arrived in India, I used it for just-in-time needs. My system had already done extensive planning, and Duet allowed me to access those plans while on the go. But there were also things that were unplanned, and for those I turned to Duet.
 
-On my first day with Duet I had a flight the next morning, so I typed "Check me in." Duet completed much of the check-in without me. Air India's site would not open my booking in Duet's own browser, and Duet could not open a browser on my home machine by itself. So I turned to Dispatch, a beta function of the Claude mobile app. Dispatch had the Claude desktop app, running on my always-on machine at home, open the Air India website in my Claude-enabled Chrome browser, and then Duet took over controlling that browser. It was able to complete the process without my input, except for entering my passport information and other personal information.
+On my first day with Duet I had a flight the next morning, so I typed "Check me in." Duet completed much of the check-in without me. Air India's site would not open my booking in Duet's own browser, and Duet could not open a browser on my home machine by itself. So I turned to Dispatch, a beta function of the Claude mobile app. Dispatch had the Claude desktop app, running on my always-on machine at home, open the Air India website in my Claude-enabled Chrome browser, and then Duet took over controlling that browser. It was able to complete the process without my input, except for entering my passport information and other personal information. When I got back to my room, I used my laptop to enter the passport information and complete check-in.
 
 ![Claude Duet on a phone: Air India's site would not open the booking from Duet's browser, so nothing was submitted, and a card offers to finish in Chrome on the home computer](../../assets/on-the-road-check-in.png)
 
@@ -46,7 +46,7 @@ Most of what it did was small and constant: flight times, which meeting was when
 
 ## What it got wrong on the road
 
-Once, a card answering "What time is my upcoming flight to Hyderabad?" showed my booking code. When I posted about the trip, I scrambled the e-ticket code out of the screenshot by hand. Why I should have set firm rules about private details from the start is in [my post on testing Duet](/blog/posts/testing-claude-duet/).
+Once, a card answering "What time is my upcoming flight to Hyderabad?" showed my booking code. When I posted about the trip earlier on LinkedIn and Instagram, I scrambled the e-ticket code out of the screenshot by hand. Why I should have set firm rules about private details from the start is in [my post on testing Duet](/blog/posts/testing-claude-duet/).
 
 ## Where I land
 
