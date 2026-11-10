@@ -8,9 +8,9 @@ pubDate: 2026-11-10
 
 One of my research projects interrogates film and media representations of devi, particularly the goddess Durga. I built my trip around not just the conferences, but experiential research for this and other projects. Three weeks, four cities, three talks, a panel and a workshop, plus the research, was more than I could hold in my head, so I handed the logistics to my Claude system before I left.
 
-![Matt Bennett at a lectern giving an invited talk at EFLU, Hyderabad, in front of a slide titled Disruption/Unity: How Film Editing Makes Meaning](../../assets/on-the-road-eflu-talk.jpg)
+![Matt Bennett at a lectern giving an invited talk at the English and Foreign Languages University in Hyderabad, in front of a slide titled Disruption/Unity: How Film Editing Makes Meaning](../../assets/on-the-road-eflu-talk.jpg)
 
-For example, my brief stay in Mysuru had been scheduled around two research needs: visiting a gallery to view and take notes on a painting of Durga there and to participate in darshan at Chamundeshwari, a temple dedicated to the goddess. Those were my needs anticipated before the trip, but since I had more time there I wanted some other site visit options and, most importantly, coffee shop options with wifi where I could work in my habitual style. I opened a separate Duet channel just for Mysuru and gave it the Leave Organizer's plan. "Isn't there a huge buddha statue by a lake?" It is, but in Hyderabad, in Hussain Sagar lake, so Duet added it to that leg instead. "I just arrived at the palace. How long do I have here before the art gallery?"
+For example, my brief stay in Mysuru had been scheduled around two research needs: visiting a gallery to view and take notes on a painting of Durga there and to participate in darshan at Chamundeshwari, a temple dedicated to the goddess. Those were my needs anticipated before the trip, but since I had more time there I wanted some other site visit options and, most importantly, coffee shop options with wifi where I could work in my habitual style. I opened a separate channel just for Mysuru in Duet, which Anthropic calls "[a new app where Claude works as a proactive agent](https://claude.com/blog/claude-duet)," and gave it the plan from Leave Organizer, the agent I set up to help with trip planning. I asked, "Isn't there a huge buddha statue by a lake?" It is, but in Hyderabad, in Hussain Sagar lake, so Duet added it to that leg instead. Later I asked, "I just arrived at the palace. How long do I have here before the art gallery?"
 
 ![Matt Bennett and his friend and guide Kiran standing barefoot in front of the yellow gopuram of Chamundeshwari Temple, Mysuru](../../assets/on-the-road-chamundeshwari.jpg)
 
@@ -26,7 +26,7 @@ Sometimes the bossiness was oddly precise. My first cave visit was Elephanta Isl
 
 ## Duet, just in time
 
-Once I had been granted preview access to Duet near the beginning of my trip, I used it for just-in-time needs. My system had already done extensive planning, and Duet allowed me to access those plans while on the go. But there were also things that were unplanned, and for those I turned to Duet.
+Once I had been granted preview access to Duet on 26 October, six days after I arrived in India, I used it for just-in-time needs. My system had already done extensive planning, and Duet allowed me to access those plans while on the go. But there were also things that were unplanned, and for those I turned to Duet.
 
 ## Check me in
 
@@ -38,7 +38,7 @@ That night there was no hotel email anywhere in my mail, so Duet wrote me a scri
 
 ## Small things, all the time
 
-Most of what it did was small and constant: flight times, which meeting was when, what a shop was, a Toronto editor's deadline converted to Indian time, and a review reminder kept beside my own WhatsApp one. "I don't want the WhatsApp reminder cancelled; I just need both."
+Most of what it did was small and constant: flight times, which meeting was when, what a shop was, a Toronto editor's deadline converted to Indian time, and a review reminder kept beside my own WhatsApp one. As I told Duet, "I don't want the WhatsApp reminder cancelled; I just need both."
 
 ## What it got wrong on the road
 
