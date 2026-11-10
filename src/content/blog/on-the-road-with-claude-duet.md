@@ -1,0 +1,53 @@
+---
+title: "On the Road with Claude Duet"
+description: "Three weeks in India with a bossy WhatsApp agent and a preview of Claude Duet: how my Claude system handled check-in, reminders and coffee shops."
+pubDate: 2026-11-10
+---
+
+India. 3 weeks. 4 cities. 3 hotels. 2 university guest houses. 1 trade show/conference/postproduction training workshop. 1 conference presentation. 1 panel presentation. 2 invited lectures. 2 caves. 1 temple. How? Claude: 1 bossy agent in my WhatsApp. 1 preview of Claude Duet.
+
+One of my research projects interrogates film and media representations of devi, particularly the goddess Durga. I built my trip around not just the conferences, but experiential research for this and other projects. Three weeks, four cities, three talks, a panel and a workshop, plus the research, was more than I could hold in my head, so I handed the logistics to my Claude system before I left. Partway through the trip, I also got a preview of Claude Duet, which Anthropic calls "[a new app where Claude works as a proactive agent](https://claude.com/blog/claude-duet)."
+
+![Me at a lectern giving an invited talk at the English and Foreign Languages University in Hyderabad, in front of a slide titled Disruption/Unity: How Film Editing Makes Meaning](../../assets/on-the-road-eflu-talk.jpg)
+
+## The bossy agent
+
+In WhatsApp, I set up a chat with my system's existing Leave Organizer agent several weeks before the trip (and before my access to the preview of Duet). Leave Organizer is the agent I created to help with trip planning. The agent passed along information that was already being shared through WhatsApp with me to my system. The conference at which I was presenting used a WhatsApp group to share information with participants: versions of the program as it developed, information on accommodations, questions, and social communication. I did not add an agent to this group, but instead used that separate chat as the only connection between WhatsApp and Leave Organizer. I then forwarded important information from the group to that channel, which passed it to my system.
+
+Before the trip, I also asked Leave Organizer to use the channel to send me scheduled reminders during the trip. If I had access to Duet before the trip, I could have set it up to send these reminders. Because the conference used WhatsApp, I likely would have still set up the agent chat there, but would probably have used Duet for the reminders. For most users, Duet is the right place for reminders, which is the work of a professional and personal assistant. It already produces morning briefs and manages tasks. While I am not using the morning briefs, I have worked with both Duet and my desktop system to integrate Duet's task system with my existing system's to-dos.
+
+I chose to keep the agent out of the group chat. First and foremost, without consent by everyone in the group I would not have felt comfortable doing so. I believed that the perception of some folks in the group would be that they were being surveilled, but this may have been my own projection. There were technical reasons too, which Leave Organizer found when it researched the setup in September: WhatsApp's official route can't join a group someone else created, and the unofficial tools that can read a group break WhatsApp's terms and put a ban on your own number. Forwarding to a separate chat sidestepped both. The forwarding design was my own idea; the research confirmed it.
+
+I jokingly refer to the Leave Organizer WhatsApp agent as bossy, but it was only reacting to what the system had already learned about me. Some neurodivergence issues cause me to sometimes forget to eat, to burn out after being around groups of people, to leave for the day without having everything I need with me, to need multiple reminders of the same task, etc. Had the agent not been bossy, not only would important tasks have fallen through the cracks, but also some basic self-care needs. I include this because, if someone who is also neurodivergent reads this and sees how I use it, maybe it will inspire them, too.
+
+Sometimes the bossiness was oddly precise. My first cave visit was Elephanta Island, at the very beginning of my trip, to photograph and take notes on the Ardhanarishvara carving. Leave Organizer reminded me to apply mosquito repellent and named the particular disease carried by the daytime mosquitos: dengue. When I was out in nature in the evening, it told me to apply repellent again, this time because mosquitos potentially carrying malaria were out at night. I found it kind of amusing that it knew which disease to warn me about at each hour of the day.
+
+## Check me in
+
+Once I had been granted preview access to Duet on 26 October, six days after I arrived in India, I used it for just-in-time needs. My system had already done extensive planning, and Duet allowed me to access those plans while on the go. But there were also things that were unplanned, and for those I turned to Duet.
+
+On my first day with Duet I had a flight the next morning, so I typed "Check me in." Duet completed much of the check-in without me. Air India's site would not open my booking in Duet's own browser, and Duet could not open a browser on my home machine by itself. So I turned to Dispatch, a beta function of the Claude mobile app. Dispatch had the Claude desktop app, running on my always-on machine at home, open the Air India website in my Claude-enabled Chrome browser, and then Duet took over controlling that browser. It was able to complete the process without my input, except for entering my passport information and other personal information. When I got back to my room, I used my laptop to enter the passport information and complete check-in.
+
+![Claude Duet on a phone: Air India's site would not open the booking from Duet's browser, so nothing was submitted, and a card offers to finish in Chrome on the home computer](../../assets/on-the-road-check-in.png)
+
+That is where three safeguards met: Air India's site, which would not let Duet's own browser into my booking; Duet, which stopped and submitted nothing rather than work around the site; and the handoff itself, which left my passport and personal details for me to enter. Had I been able to enter them from the Claude mobile app, I would not only have shared sensitive information with Claude, but would also have been passing sensitive personal information over a public coffee shop network from my phone to the cloud and then to my home machine.
+
+That night there was no email confirming a car anywhere in my email, so Duet wrote me a script to read at the front desk for a 4:05 am airport car. When I signed off, it said: "Good night. When you get back, remember to ask the front desk for the 4:05am car."
+
+## Mysuru
+
+My brief stay in Mysuru had been scheduled around two research needs: visiting a gallery to view and take notes on a painting of Durga there and to participate in darshan at Chamundeshwari, a temple dedicated to the goddess. Those were my needs anticipated before the trip, but since I had more time there I wanted some other site visit options and, most importantly, coffee shop options with wifi where I could work in my habitual style. I opened a separate channel just for Mysuru in Duet and gave it the plan from Leave Organizer. I asked, "Isn't there a huge buddha statue by a lake?" There is, but it is in Hyderabad, in Hussain Sagar lake, so Duet added it to that leg of the trip instead. Later I asked, "I just arrived at the palace. How long do I have here before the art gallery?" Duet answered, "It closes at 17:00. If you want about an hour there, leave the palace around 15:45, which gives you roughly two and a half hours now."
+
+![My friend Kiran and I standing barefoot in front of the yellow gopuram of Chamundeshwari Temple, Mysuru](../../assets/on-the-road-chamundeshwari.jpg)
+
+## Small things, all the time
+
+Most of what it did was small and constant: flight times, which meeting was when, what a shop was, a Toronto editor's deadline converted to Indian time, and a review reminder kept beside my own WhatsApp one. As I told Duet, "I don't want the WhatsApp reminder cancelled; I just need both."
+
+## What it got wrong on the road
+
+Once, a card answering "What time is my upcoming flight to Hyderabad?" showed my booking code. When I posted about the trip earlier on LinkedIn and Instagram, I scrambled the e-ticket code out of the screenshot by hand. Why I should have set firm rules about private details from the start is in [my post on testing Duet](/blog/posts/testing-claude-duet/).
+
+## Where I land
+
+Duet turned out to be a helpful companion on the road, providing me with just-in-time assistance while having access to context and processes on my desktop Claude system back home.
