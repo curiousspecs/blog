@@ -10,17 +10,25 @@ I tested it for two weeks, mostly dictating into my phone between talks.
 
 ![Claude Duet's first message on a phone: Hi Matt, welcome! Today's our first day working together, followed by its read of my mail, calendars and Drive](../../assets/testing-duet-welcome.png)
 
+*Duet's first message, and its read of my mail, calendars and Drive.*
+
 ## How we talked
 
 The surprises were in the interface. As I told Duet, "I didn't realize I could test this like social chat with hearts and other emoji reactions." Duet said a heart or a thumbs-down goes into its notes for that chat, "not into the model". When I had 25 calls for papers, workshops and fellowships to sort, pulled from sixteen newsletter digests I couldn't read on the road, I asked for them "one by one with some details on each ... as interface accept/decline question cards". About two hours later, 9 were accepted and 16 declined, and each accept was already a task.
 
 ![Accept and decline cards in Claude Duet: a seminar declined, a webinar and a workshop accepted and added to tasks](../../assets/testing-duet-cards.png)
 
+*Accept and decline cards. Each accept went straight onto my task list.*
+
 Then I asked how it works. In one message, from a car on the way to Mysuru, I asked it fourteen questions about itself. It answered seven and refused seven, including its instructions and what it is built on. I wrote back, "I'm sorry to pry."
 
 ![My message of questions to Claude Duet about how it works, and Duet's reply: You asked 14 things. I can answer 7 of them](../../assets/testing-duet-fourteen-questions.png)
 
+*Fourteen questions in one message. Duet could answer seven.*
+
 ![Claude Duet listing the seven things it can't share: its system prompt, how long it is, what else rides along with a message, compacting, pruning, model routing, and what it is built on](../../assets/testing-duet-seven-refused.png)
+
+*The seven things Duet can't share, from its system prompt to what it is built on.*
 
 While a little disappointing, Duet's refusal/inability to answer many of my questions is understandable. I asked everything I wanted to know with the understanding, based on my experience with the Claude desktop app, other LLMs, and cognitive studies, that some likely would be unanswerable and some would probably be proprietary information.
 
@@ -31,6 +39,8 @@ I didn't start from zero. My research runs on a set of Claude agents, each with 
 Its first write into my files worked. The next hit a limit of its own tools, which could make a file but not change one. It is now joining my system as an agent of its own. As I put it to Duet, "It needs some of the agent scaffolding, functionality, tools, processes to integrate usefully with my system, but it is also unique and so has its own concerns that other agents don't."
 
 ![Claude Duet reporting that another agent in my system agreed to all four points of Duet's proposal overnight, and that one change to the system's rules waits for my yes](../../assets/testing-duet-agent-reply.jpg)
+
+*Duet reporting that another agent in my system agreed to its proposal overnight.*
 
 ## What went wrong
 

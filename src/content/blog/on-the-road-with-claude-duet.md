@@ -10,6 +10,8 @@ One of my research projects interrogates film and media representations of devi,
 
 ![Me at a lectern giving an invited talk at the English and Foreign Languages University in Hyderabad, in front of a slide titled Disruption/Unity: How Film Editing Makes Meaning](../../assets/on-the-road-eflu-talk.jpg)
 
+*Giving an invited talk at the English and Foreign Languages University in Hyderabad.*
+
 ## The bossy agent
 
 In WhatsApp, I set up a chat with my system's existing Leave Organizer agent several weeks before the trip (and before my access to the preview of Duet). Leave Organizer is the agent I created to help with trip planning. The agent passed along information that was already being shared through WhatsApp with me to my system. The conference at which I was presenting used a WhatsApp group to share information with participants: versions of the program as it developed, information on accommodations, questions, and social communication. I did not add an agent to this group, but instead used that separate chat as the only connection between WhatsApp and Leave Organizer. I then forwarded important information from the group to that channel, which passed it to my system.
@@ -30,6 +32,8 @@ On my first day with Duet I had a flight the next morning, so I typed "Check me 
 
 ![Claude Duet on a phone: Air India's site would not open the booking from Duet's browser, so nothing was submitted, and a card offers to finish in Chrome on the home computer](../../assets/on-the-road-check-in.png)
 
+*Air India's site wouldn't open my booking in Duet's browser, so Duet offered to finish in Chrome on my home computer.*
+
 That is where three safeguards met: Air India's site, which would not let Duet's own browser into my booking; Duet, which stopped and submitted nothing rather than work around the site; and the handoff itself, which left my passport and personal details for me to enter. Had I been able to enter them from the Claude mobile app, I would not only have shared sensitive information with Claude, but would also have been passing sensitive personal information over a public coffee shop network from my phone to the cloud and then to my home machine.
 
 That night there was no email confirming a car anywhere in my email, so Duet wrote me a script to read at the front desk for a 4:05 am airport car. When I signed off, it said: "Good night. When you get back, remember to ask the front desk for the 4:05am car."
@@ -39,6 +43,8 @@ That night there was no email confirming a car anywhere in my email, so Duet wro
 My brief stay in Mysuru had been scheduled around two research needs: visiting a gallery to view and take notes on a painting of Durga there and to participate in darshan at Chamundeshwari, a temple dedicated to the goddess. Those were my needs anticipated before the trip, but since I had more time there I wanted some other site visit options and, most importantly, coffee shop options with wifi where I could work in my habitual style. I opened a separate channel just for Mysuru in Duet and gave it the plan from Leave Organizer. I asked, "Isn't there a huge buddha statue by a lake?" There is, but it is in Hyderabad, in Hussain Sagar lake, so Duet added it to that leg of the trip instead. Later I asked, "I just arrived at the palace. How long do I have here before the art gallery?" Duet answered, "It closes at 17:00. If you want about an hour there, leave the palace around 15:45, which gives you roughly two and a half hours now."
 
 ![My friend Kiran and I standing barefoot in front of the yellow gopuram of Chamundeshwari Temple, Mysuru](../../assets/on-the-road-chamundeshwari.jpg)
+
+*My friend Kiran and I at Chamundeshwari Temple, Mysuru.*
 
 ## Small things, all the time
 
