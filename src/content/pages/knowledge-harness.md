@@ -10,6 +10,10 @@ The knowledge work harness is software I am building to take one piece of academ
 >
 > — [“Too much visibility is the same as invisibility”](/blog/posts/too-much-visibility/)
 
+## Where it came from
+
+This began as RWA, my Research and Writing Assistant: a single Claude Cowork project that I began integrating my Zotero and PDF libraries and reading notes into. It grew into the multi-organ system that exists now, and has been spun off as its own independent project again, but scaled up, multi-featured and planned for modularity. It is not just an academic writing desk: it can include creativity through the screenwriting desk and, to a lesser extent, the social media desk.
+
 ## Privacy by design
 
 - **Local models first.** Work runs on my own machines, and a model gateway routes each request, caps spending and keeps a ledger of what it spent.
